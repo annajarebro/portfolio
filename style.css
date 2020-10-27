@@ -1,0 +1,566 @@
+/*
+----------------------------------------------------------------------------------
+
+Umeå universitet
+Institutionen för informatik
+Kurs: CSS-baserad webbdesign
+
+----------------------------------------------------------------------------------
+*/
+/*
+----------------------------------------------------------------------------------
+
+Namn: Anna Jarebro
+
+----------------------------------------------------------------------------------
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#bg {
+    position: fixed;
+    left: 0;
+    top: 30vh;
+    height: 70vh;
+    width: 100vw;
+    background: url(Img/omni_bg2-03.png);
+    background-size: auto 100%;
+    /* background-repeat: repeat-x;*/
+    background-position: 0 0;
+    z-index: -1;
+}
+
+/*-----------------------------------------BODY--------------------------------*/
+body {
+
+    font-family: acumin-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background: #fff;
+    color: #263238;
+
+
+}
+
+body#body_index {
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+/*-------------------------------TEXT SIZE AND STYLE ----------------------*/
+h1,
+h2,
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+
+
+h1 {
+
+    font-size: 1.4em;
+    color: #263238;
+    padding-bottom: 2em;
+}
+
+.intro_h1 {
+
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vh;
+    padding-top: 3em;
+
+
+}
+
+.h1_inverted {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vh;
+    padding-top: 3em;
+    color: #f8f9f9;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.center_p {
+    text-align: center;
+}
+
+
+a {
+
+    font-size: 1em;
+    color: #FFF;
+}
+
+
+
+
+
+/*---------------------------------HEADER & PROJECT NAV---------------------------------------*/
+
+/* Two column header*/
+
+header {
+    display: flex;
+    padding: 30px;
+}
+
+#logo {
+
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    color: #263238;
+
+}
+
+#logo_inverted {
+
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    color: #f8f9f9;
+
+}
+
+#logo,
+nav {
+    flex: 50%;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+
+    padding-top: 0.4em;
+
+}
+
+/* Vertical list*/
+nav ul li {
+    display: inline;
+}
+
+/* Style of navigation links*/
+nav a {
+    color: #85929E;
+    padding: 0 1em;
+    font-size: 1em;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.active#active_white {
+    color: #FFF;
+}
+
+.active {
+    color: #263238;
+}
+
+.active:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*----------------------------------Main comig soon------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "text"
+        "dino"
+        "ocean";
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+#comingsoon p {
+    grid-area: text;
+    text-align: center;
+}
+
+#diverdino {
+    grid-area: dino;
+    display: grid;
+    grid-template-areas:
+        "dino"
+        "button";
+    margin: auto;
+
+}
+
+#diverdino img {
+    max-height: 200px;
+}
+
+#button_dino {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #34495E;
+}
+
+#ocean {
+    grid-area: ocean;
+}
+
+#ocean img {
+
+    margin: auto;
+    max-width: 1140px;
+
+
+}
+
+
+
+/*------------------------PROJECTS----------------------------------------------*/
+/*---------Template for all projects --------*/
+/*-----------creating 2-colum grid grid------*/
+.mall_project {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vh;
+    padding: 3em;
+}
+
+
+/*-----------special for usability to greate solid background for rows------*/
+section#main_usability {
+    padding: 0;
+}
+
+#main_usability {
+    grid-gap: 0;
+
+
+
+}
+
+
+/*-----------makes intro into one column------*/
+.intro {
+    grid-column: span 2;
+    text-align: center;
+    margin: auto;
+}
+
+.intro img {
+    width: 100%;
+}
+
+
+/*-----------MAIN CONTENT IN PROJECTS------*/
+.content {
+    grid-column: span 2;
+    margin: auto;
+
+}
+
+
+
+.project_h2 {
+    text-align: center;
+    padding: 1em;
+
+}
+
+.text_project {
+    margin: auto;
+    max-width: 20em;
+    text-align: left;
+    padding-bottom: 2em;
+
+}
+
+.img_project {
+    margin: auto;
+
+}
+
+.img_project img {
+    width: 80vh;
+}
+
+.img_project_wf img {
+    width: 80vh;
+}
+
+.next_project {
+    grid-column: span 2;
+    text-align: center;
+    padding-right: 2em;
+
+}
+
+#next {
+    font-size: 1em;
+    color: #212121;
+}
+
+#next_inverted {
+    font-size: 1em;
+}
+
+/*-----------ONLY FOR OUTDOOR WEBSITE PROJECT------*/
+
+#outdoor_redesign {
+    margin: auto;
+}
+
+#outdoor_redesign img {
+    width: 150vh;
+}
+
+/*-----------ONLY FOR AI ROBOT PROJECT------*/
+
+body#body_inverted {
+    background-color: #18233d;
+    color: #F8F9F9;
+}
+
+#img_scenario {
+    padding-bottom: 5em;
+}
+
+.empty {
+    grid-column: span 2;
+    height: 50vh;
+
+}
+
+
+/*-----------video in airobot------*/
+video {
+    grid-column: span2;
+    max-width: 150vh;
+    height: auto;
+    padding: 6em;
+
+
+}
+
+/*-----------ONLY FOR USABILITY WEBSITE PROJECT------*/
+
+
+
+.rows {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+#into_usability {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    padding: 2em 0 3em 0;
+
+}
+
+
+#extro_usability {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 2em 0 3em 0;
+
+}
+
+
+#next_proj_inverted {
+    color: #f8f9f9;
+}
+
+
+
+#personal_note {
+    width: 70vh;
+    padding-top: 15em;
+    font-style: italic;
+}
+
+#goal {
+    padding: 0em 0em 7em 0em;
+    max-width: 40em;
+    text-align: center;
+}
+
+
+
+/*---------------------------SMALL DEVICE 650 BREAKPOINT--------------------------
+
+@media (max-width:650px) {
+
+    body {
+        max-width: 100%;
+        padding: 0em 2em;
+    }
+
+/* Two row header
+    header {
+        display: grid;
+        grid-template-areas:
+            "logo"
+            "navigation";
+    }
+
+/*main from two column to one column
+    .main {
+        display: grid;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        justify-content: center;
+        grid-template-columns: 400px;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4";
+    }
+
+    /*----index page-----
+    #logo {
+        text-align: center;
+        padding: 2em 0em;
+    }
+
+/*List from vertical to horizontal
+    nav {
+        justify-self: center;
+    }
+
+    nav ul li {
+        display: block;
+        padding-right: 0em;
+        padding-top: 0.8em;
+        margin: auto;
+        text-align: center;
+    }
+
+    a.boxtext {
+        line-height: 400px;
+    }
+
+    /*----about me-----
+
+    #portrait img {
+        max-width: 400px;
+        padding-bottom: 4em;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #main_contact {
+        justify-items: center;
+    }
+
+    #sayhello {
+        grid-area: box2;
+        margin: 0;
+
+
+    }
+
+    #mailme {
+        grid-area: box3;
+
+    }
+
+    #balloon {
+        grid-area: box1;
+
+    }
+
+    #comingsoon {
+
+        margin: auto;
+        text-align: center;
+        max-width: 500px;
+
+    }
+
+    #diverdino img {
+        max-height: 200px;
+    }
+
+    #button_dino {
+        margin-top: 0;
+        background-color: #34495E;
+    }
+
+
+    #ocean img {
+
+        max-width: 500px;
+
+
+
+    }
+}
+*/
+ 
+
+
+
+
+
+
+
+#mockup_p {
+    padding-bottom:7em;
+}
+

@@ -1,0 +1,574 @@
+/*----------GLOBAL---------*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background: #fff;
+    color: #263238;
+    font-size: 1rem;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+
+/*----------NAV---------*/
+nav {
+    flex: 50%;
+    overflow: hidden;
+    padding-bottom: 1em;
+}
+
+nav {
+    text-align: right;
+    padding-right: 1em;
+}
+
+nav ul {
+
+    padding-top: 0.4em;
+
+}
+
+/* Vertical list*/
+nav ul li {
+    display: inline;
+}
+
+/* Style of navigation links*/
+nav a {
+    padding: 0 1em;
+    font-size: 1rem;
+    font-weight: 00;
+    font-style: normal;
+    color: #102e43;
+}
+
+
+nav a:hover {
+    color: #e99e38;
+}
+
+/*----------absolute postition
+
+
+.class{
+position: absolute;
+top: 70%;
+left: 30%;
+transform: translate(-50%, -70%);
+}
+
+
+
+
+/*----------DEFINING UPPERCASE HEADINGS---------*/
+
+h3,
+h4,
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+/*----------INDIVIDUAL TEXT SETTINGS---------*/
+
+
+h1,
+h2 {
+    font-family: nunito, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #102e43;
+
+}
+
+h1 {
+    font-size: 6vh;
+}
+
+h2 {
+    font-size: 3vh;
+    font-weight: 700;
+    color: #e99e38;
+
+}
+
+h3,
+h4 {
+    font-size: 1rem;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 0.6rem;
+    ;
+    padding: 1em 0 1.5em 0;
+}
+
+
+.p_story {
+    font-size: 0.7rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
+
+
+}
+
+
+
+
+.section {
+    width: 100%;
+    height: 100vh;
+
+    /* Scroll Snap */
+    scroll-snap-align: center;
+
+}
+
+/*------------------------------HOME-------------------------------*/
+
+
+.intro2 {
+    display: none;
+}
+
+#home {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 3em 2.5em;
+    grid-template-rows: 40% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-areas:
+        "first first first first"
+        "text1 img2 text3 img4"
+        "img1 text2 img3 text4";
+    padding: 0 4em;
+
+
+}
+
+
+.intro {
+    grid-area: first;
+
+    padding-bottom: 4em;
+
+
+
+}
+
+.text1 {
+    grid-area: text1;
+
+}
+
+.text2 {
+    grid-area: text2;
+
+
+}
+
+.text3 {
+    padding: 0 1em;
+    grid-area: text3;
+}
+
+.text4 {
+    grid-area: text4;
+
+}
+
+.img1 {
+    grid-area: img1;
+    padding-bottom: 1em;
+
+}
+
+.img2 {
+    grid-area: img2;
+
+
+}
+
+.img3 {
+    grid-area: img3;
+    padding-bottom: 1em;
+}
+
+.img4 {
+    grid-area: img4;
+
+
+}
+
+
+.story_img img {
+    width: 25vh;
+}
+
+#css_img img {
+    width: 32vh;
+
+}
+
+.story_text {
+
+    justify-self: center;
+
+}
+
+
+.story_img {
+
+    justify-self: center;
+
+}
+
+/*------------------------------PROJECTS-------------------------------*/
+
+
+
+
+#projects {
+
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-template-rows: 17em auto;
+    grid-template-areas:
+        "title title title"
+        "p1 p2 p3";
+
+}
+
+.project {
+
+    height: 48vh;
+    width: 48vh;
+    border-radius: 100%;
+
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.p_h1 {
+    justify-self: center;
+    margin-top: 5em;
+    grid-area: title;
+
+}
+
+.p1 {
+    grid-area: p1;
+    justify-self: end;
+    background: url(Img/omni1-05.png) no-repeat center center/cover;
+}
+
+.p1:hover {
+    background: url(Img/omni2-05.png) no-repeat center center/cover;
+}
+
+.p2 {
+    grid-area: p2;
+    justify-self: center;
+    background: url(Img/outdoor1-04.png) no-repeat center center/cover;
+}
+
+.p2:hover {
+    background: url(Img/outdoor2-04.png) no-repeat center center/cover;
+}
+
+.p3 {
+    grid-area: p3;
+    justify-self: start;
+    background: url(Img/temi-03.png) no-repeat center center/cover;
+}
+
+.p3:hover {
+    background: url(Img/temi2-03.png) no-repeat center center/cover;
+}
+
+/*------------------------------ABOUT-------------------------------*/
+
+.about_me {
+
+    width: 30em;
+    align-self: center;
+}
+
+.about_img {
+    background: url(Img/DSCF1555.jpg) no-repeat center center/cover;
+    height: 32em;
+    width: 25em;
+    align-self: center;
+    margin-right: 4em;
+}
+
+
+
+#about {
+    display: flex;
+    justify-content: center;
+
+}
+
+.about_p {
+    padding: 2em 0;
+    text-align: justify;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 1.5em 4em;
+    border-radius: 4em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.4em 0.4em;
+    cursor: pointer;
+    background: #ffc35a;
+}
+
+.button_a {
+    color: #aa4e02;
+    padding: 1.5em 0;
+
+}
+
+
+.button:hover {
+    color: #ffc35a;
+    background: #aa4e02;
+}
+
+.button_a:hover {
+    color: #ffc35a;
+
+}
+
+
+
+nav#dot-nav {
+    position: fixed;
+    right: 1em;
+    top: 20em;
+}
+
+nav#dot-nav a {
+    background: #ecf0f3;
+    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    margin: 1em;
+}
+
+nav#dot-nav a.active,
+nav#dot-nav a:first-child {
+    background: #ffc35a;
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+
+@media (max-width: 1024px) {
+
+    #home {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: 25% 15% 15% 15%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "first first"
+            "text1 img1"
+            "img2 text2"
+            "text3 img3"
+            "img4 text4";
+
+    }
+       #projects {
+        display: grid;
+
+        grid-template-rows: 10em 1fr 1fr 1fr;
+        grid-template-areas:
+            "title"
+            "p1"
+            "p2"
+            "p3";
+
+    }
+
+    .story_img img {
+        width: 15vh;
+    }
+
+
+    #css_img img {
+        width: 20vh;
+    }
+    
+    .story_text {
+        max-width: 20em;
+    }
+    .p_small h1{
+        font-size: 3rem;
+    }
+    
+     .project {
+
+        height: 25vh;
+         width: 25vh;
+      
+    }
+        .p1 {
+        grid-area: p1;
+        justify-self: end;
+        background: url(Img/omni2-05.png) no-repeat center center/cover;
+    }
+
+
+
+    .p2 {
+        grid-area: p2;
+        justify-self: center;
+        background: url(Img/outdoor2-04.png) no-repeat center center/cover;
+    }
+
+
+    .p3 {
+        grid-area: p3;
+        justify-self: start;
+        background: url(Img/temi2-03.png) no-repeat center center/cover;
+    }
+ .about_img {
+
+    height: 30em;
+    width: 25em;
+}
+
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        scroll-snap-type: none;
+    }
+
+    .intro2 {
+        display: block;
+        height: 100%;
+        padding-top: 50%;
+        padding-left: 3em;
+        background-color: #ffc35a;
+    }
+
+    .intro2 h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro2 h2 {
+        padding-bottom: 10em;
+        font-size: 1.2rem;
+    }
+
+    .button2 {
+        background: #e99e38;
+        padding: 2em 7em;
+
+    }
+
+
+    .button2 a {
+        color: #ffc35a;
+    }
+
+    #home {
+
+        display: none;
+
+
+
+    }
+
+    #projects {
+        margin-top: 3em;
+        display: grid;
+        grid-template-rows: 15em 1fr;
+        grid-template-areas:
+            "title"
+            "p1"
+            "p2"
+            "p3";
+
+
+    }
+
+    .project {
+
+        height: 40vh;
+        width: 100vw;
+        border-radius: 0;
+
+    }
+
+    .p1 {
+        grid-area: p1;
+        justify-self: end;
+        background: url(Img/omni2-05.png) no-repeat center center/cover;
+    }
+
+
+
+    .p2 {
+        grid-area: p2;
+        justify-self: center;
+        background: url(Img/outdoor2-04.png) no-repeat center center/cover;
+    }
+
+
+    .p3 {
+        grid-area: p3;
+        justify-self: start;
+        background: url(Img/temi2-03.png) no-repeat center center/cover;
+    }
+
+
+
+    #about {
+        display: none;
+        justify-content: center;
+
+    }
