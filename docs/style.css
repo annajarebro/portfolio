@@ -33,7 +33,7 @@ html {
     top: 30vh;
     height: 70vh;
     width: 100vw;
-    background: url(Img/omni_bg2-03.png);
+    background: url(Img/omni-bg-op.jpg);
     background-size: auto 100%;
     /* background-repeat: repeat-x;*/
     background-position: 0 0;
@@ -205,62 +205,6 @@ nav a:hover {
     cursor: default;
 }
 
-
-
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-/*----------------------------------Main comig soon------------------------------*/
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-
-.wrapper {
-    display: grid;
-    grid-template-areas:
-        "text"
-        "dino"
-        "ocean";
-    margin: auto;
-    padding-top: 40px;
-    text-align: center;
-
-}
-
-#comingsoon p {
-    grid-area: text;
-    text-align: center;
-}
-
-#diverdino {
-    grid-area: dino;
-    display: grid;
-    grid-template-areas:
-        "dino"
-        "button";
-    margin: auto;
-
-}
-
-#diverdino img {
-    max-height: 200px;
-}
-
-#button_dino {
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #34495E;
-}
-
-#ocean {
-    grid-area: ocean;
-}
-
-#ocean img {
-
-    margin: auto;
-    max-width: 1140px;
-
-
-}
 
 
 

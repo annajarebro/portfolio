@@ -124,7 +124,7 @@ h4 {
 
 
 .p_story {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -294,21 +294,21 @@ h4 {
 .p1 {
     grid-area: p1;
     justify-self: end;
-    background: url(Img/omni1-05.png) no-repeat center center/cover;
+    background: url(Img/omni1-op.jpg) no-repeat center center/cover;
 }
 
 .p1:hover {
-    background: url(Img/omni2-05.png) no-repeat center center/cover;
+    background: url(Img/omni2-op.jpg) no-repeat center center/cover;
 }
 
 .p2 {
     grid-area: p2;
     justify-self: center;
-    background: url(Img/outdoor1-04.png) no-repeat center center/cover;
+    background: url(Img/outdoor1-op.jpg) no-repeat center center/cover;
 }
 
 .p2:hover {
-    background: url(Img/outdoor2-04.png) no-repeat center center/cover;
+    background: url(Img/outdoor2-op.jpg) no-repeat center center/cover;
 }
 
 .p3 {
@@ -318,7 +318,7 @@ h4 {
 }
 
 .p3:hover {
-    background: url(Img/temi2-03.png) no-repeat center center/cover;
+    background: url(Img/temi2-op.jpg) no-repeat center center/cover;
 }
 
 /*------------------------------ABOUT-------------------------------*/
@@ -456,7 +456,7 @@ nav#dot-nav a:first-child {
         .p1 {
         grid-area: p1;
         justify-self: end;
-        background: url(Img/omni2-05.png) no-repeat center center/cover;
+        background: url(Img/omni2-op.jpg) no-repeat center center/cover;
     }
 
 
@@ -464,7 +464,7 @@ nav#dot-nav a:first-child {
     .p2 {
         grid-area: p2;
         justify-self: center;
-        background: url(Img/outdoor2-04.png) no-repeat center center/cover;
+        background: url(Img/outdoor2-op.jpg) no-repeat center center/cover;
     }
 
 
@@ -547,7 +547,7 @@ nav#dot-nav a:first-child {
     .p1 {
         grid-area: p1;
         justify-self: end;
-        background: url(Img/omni2-05.png) no-repeat center center/cover;
+        background: url(Img/omni2-op.jpg) no-repeat center center/cover;
     }
 
 
@@ -555,14 +555,14 @@ nav#dot-nav a:first-child {
     .p2 {
         grid-area: p2;
         justify-self: center;
-        background: url(Img/outdoor2-04.png) no-repeat center center/cover;
+        background: url(Img/outdoor2-op.jpg) no-repeat center center/cover;
     }
 
 
     .p3 {
         grid-area: p3;
         justify-self: start;
-        background: url(Img/temi2-03.png) no-repeat center center/cover;
+        background: url(Img/temi2-op.jpg) no-repeat center center/cover;
     }
 
 
