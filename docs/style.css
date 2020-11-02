@@ -25,7 +25,7 @@ html {
 }
 
 
-
+/*----------------------------------------USABILITY BACKGROUND--------------------------------*/
 
 #bg {
     position: fixed;
@@ -383,120 +383,9 @@ video {
 
 
 
-/*---------------------------SMALL DEVICE 650 BREAKPOINT--------------------------
-
-@media (max-width:650px) {
-
-    body {
-        max-width: 100%;
-        padding: 0em 2em;
-    }
-
-/* Two row header
-    header {
-        display: grid;
-        grid-template-areas:
-            "logo"
-            "navigation";
-    }
-
-/*main from two column to one column
-    .main {
-        display: grid;
-        padding-bottom: 50px;
-        padding-top: 20px;
-        justify-content: center;
-        grid-template-columns: 400px;
-        grid-template-areas:
-            "box1"
-            "box2"
-            "box3"
-            "box4";
-    }
-
-    /*----index page-----
-    #logo {
-        text-align: center;
-        padding: 2em 0em;
-    }
-
-/*List from vertical to horizontal
-    nav {
-        justify-self: center;
-    }
-
-    nav ul li {
-        display: block;
-        padding-right: 0em;
-        padding-top: 0.8em;
-        margin: auto;
-        text-align: center;
-    }
-
-    a.boxtext {
-        line-height: 400px;
-    }
-
-    /*----about me-----
-
-    #portrait img {
-        max-width: 400px;
-        padding-bottom: 4em;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    #main_contact {
-        justify-items: center;
-    }
-
-    #sayhello {
-        grid-area: box2;
-        margin: 0;
+/*---------------------------SMALL DEVICE 650 BREAKPOINT--------------------------*/
 
 
-    }
-
-    #mailme {
-        grid-area: box3;
-
-    }
-
-    #balloon {
-        grid-area: box1;
-
-    }
-
-    #comingsoon {
-
-        margin: auto;
-        text-align: center;
-        max-width: 500px;
-
-    }
-
-    #diverdino img {
-        max-height: 200px;
-    }
-
-    #button_dino {
-        margin-top: 0;
-        background-color: #34495E;
-    }
-
-
-    #ocean img {
-
-        max-width: 500px;
-
-
-
-    }
-}
-*/
- 
 
 
 
