@@ -314,6 +314,24 @@ section#main_usability {
     width: 150vh;
 }
 
+
+
+
+#text_wider {
+    min-width: 40em;
+}
+
+.text_wider {
+     
+    max-width: 30em;
+   
+}
+
+.user_hd {
+    font-weight: 600;
+}
+
+
 /*-----------ONLY FOR AI ROBOT PROJECT------*/
 
 body#body_inverted {
@@ -388,7 +406,9 @@ video {
     text-align: center;
 }
 
-
+#mockup_p {
+    padding-bottom:7em;
+}
 
 /*---------------------------SMALL DEVICE 650 BREAKPOINT--------------------------*/
 
@@ -397,10 +417,10 @@ video {
 
 
 
-
-
-
-#mockup_p {
-    padding-bottom:7em;
+.img_project_wf {
+    
 }
 
+.img_wireframe {
+    padding: 2em 0;
+}
