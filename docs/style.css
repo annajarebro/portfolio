@@ -252,6 +252,13 @@ section#main_usability {
 
 }
 
+.content_text {
+    grid-column: span 2; 
+    margin: auto;
+    max-width: 40rem;
+    padding: 4em;
+}
+
 
 
 .project_h2 {
