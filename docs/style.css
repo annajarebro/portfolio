@@ -228,8 +228,6 @@ section#main_usability {
 #main_usability {
     grid-gap: 0;
 
-
-
 }
 
 
@@ -253,7 +251,7 @@ section#main_usability {
 }
 
 .content_text {
-    grid-column: span 2; 
+    grid-column: span 2;
     margin: auto;
     max-width: 40rem;
     padding: 4em;
@@ -284,9 +282,7 @@ section#main_usability {
     width: 80vh;
 }
 
-.img_project_wf img {
-    width: 80vh;
-}
+
 
 .next_project {
     grid-column: span 2;
@@ -316,15 +312,10 @@ section#main_usability {
 
 
 
-
-#text_wider {
-    min-width: 40em;
-}
-
 .text_wider {
-     
+
     max-width: 30em;
-   
+
 }
 
 .user_hd {
@@ -369,14 +360,13 @@ video {
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.9);
-
 }
 
 #into_usability {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 0;
     padding: 2em 0 3em 0;
-    
+
 
 }
 
@@ -386,6 +376,10 @@ video {
     margin: 0;
     padding: 3em 0 5em 0;
 
+}
+
+#extro_small {
+    display: none;
 }
 
 
@@ -408,19 +402,12 @@ video {
 }
 
 #mockup_p {
-    padding-bottom:7em;
+    padding-bottom: 7em;
 }
 
-/*---------------------------SMALL DEVICE 650 BREAKPOINT--------------------------*/
 
 
-
-
-
-
-.img_project_wf {
-    
-}
+.img_project_wf {}
 
 .img_wireframe {
     padding: 2em 0;
@@ -431,6 +418,90 @@ video {
     padding-left: 1.3rem;
     padding-top: 1rem;
 }
+
 .list li {
     padding: 0.1rem;
+}
+
+.back_nav {
+    display: none;
+}
+
+/*Small devices (landscape phones, less than 1024px)*/
+
+@media (max-width: 1024px) {
+
+    /*-----------USABILITY-----------------*/
+    #extro_usability {
+        display: none;
+        background-color: rgba(255, 255, 255, 1);
+        margin: 0;
+
+    }
+
+    #extro_small {
+        display: block;
+        background-color: rgba(255, 255, 255, 1);
+        margin: auto;
+
+    }
+
+    .rows {
+
+        display: block;
+        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .text_project {
+        margin: auto;
+        max-width: 25em;
+        text-align: left;
+        padding: 5em 0;
+
+
+    }
+
+    /*-----------OUTDOOR-----------------*/
+    .mall_project {
+        display: block;
+        padding: 3em;
+    }
+
+    .img_project img {
+        width: 100%;
+    }
+
+    #outdoor_redesign img {
+        width: 100%;
+    }
+
+    .content_text {
+        padding: 0em;
+    }
+
+    /*-----------AI ROBOT PROJECT------*/
+
+ 
+
+ 
+
+
+    /*-----------video in airobot------*/
+    video {
+        grid-column: span2;
+        max-width: 100%;
+        height: auto;
+        padding: 2em 0em;
+
+
+    }
+    .list_nav {display: none;}
+    .back_nav {display: block;}
+    .back_white {color: white;}
+}
+
+#personal_note {
+    width: 100%;
+   
 }

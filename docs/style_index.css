@@ -382,27 +382,8 @@ h4 {
 
 
 
-nav#dot-nav {
-    position: fixed;
-    right: 1em;
-    top: 20em;
-}
 
-nav#dot-nav a {
-    background: #ecf0f3;
-    border-radius: 1rem;
-    width: 1rem;
-    height: 1rem;
-    display: block;
-    margin: 1em;
-}
-
-nav#dot-nav a.active,
-nav#dot-nav a:first-child {
-    background: #ffc35a;
-}
-
-/*Small devices (landscape phones, less than 768px)*/
+/*Small devices (landscape phones, less than 1024px)*/
 
 @media (max-width: 1024px) {
 
@@ -507,6 +488,7 @@ nav#dot-nav a:first-child {
     .button2 {
         background: #e99e38;
         padding: 2em 7em;
+        margin: 0;
 
     }
 
@@ -518,8 +500,6 @@ nav#dot-nav a:first-child {
     #home {
 
         display: none;
-
-
 
     }
 
@@ -562,7 +542,7 @@ nav#dot-nav a:first-child {
     .p3 {
         grid-area: p3;
         justify-self: start;
-        background: url(Img/temi2-op.jpg) no-repeat center center/cover;
+        background: url(Img/temi2-03.png) no-repeat center center/cover;
     }
 
 
@@ -578,3 +558,12 @@ nav#dot-nav a:first-child {
 
 
 
+
+.h2_copy {
+    padding-top: 3em;
+   
+}
+
+.copyright {
+    display: none;
+}
