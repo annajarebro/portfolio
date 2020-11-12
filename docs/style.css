@@ -432,7 +432,7 @@ video {
 @media (max-width: 1024px) {
     
     header {
-    padding: 0 2em;
+    padding: 0 1em;
 }
     
     .intro_h1 {
