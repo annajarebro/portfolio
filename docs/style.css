@@ -390,7 +390,7 @@ video {
 
 
 #personal_note {
-    width: 70vh;
+    width: 60em;
     padding-top: 15em;
     font-style: italic;
 }
@@ -525,7 +525,9 @@ video {
    
 }
     
-    }
+   
 
-
-
+.details {
+    padding-bottom: 7em;
+}
+     }
