@@ -455,7 +455,7 @@ video {
 
     .text_project {
         margin: auto;
-        max-width: 25em;
+        max-width: 80%;
         text-align: left;
         padding: 5em 0;
 
@@ -497,7 +497,11 @@ video {
 
     }
     .list_nav {display: none;}
-    .back_nav {display: block;}
+    .back_nav {
+        display: block;
+        text-align: left;
+    
+    }
     .back_white {color: white;}
 }
 
