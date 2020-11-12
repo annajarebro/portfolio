@@ -348,7 +348,6 @@ video {
     height: auto;
     padding: 6em;
 
-
 }
 
 /*-----------ONLY FOR USABILITY WEBSITE PROJECT------*/
@@ -505,12 +504,12 @@ video {
     /*-----------video in airobot------*/
     video {
         grid-column: span2;
-        max-width: 100%;
+        width: 100%;
         height: auto;
         padding: 2em 0em;
 
-
     }
+ 
     .list_nav {display: none;}
     .back_nav {
         display: block;
@@ -531,3 +530,5 @@ video {
     padding-bottom: 7em;
 }
      }
+
+
