@@ -138,27 +138,9 @@ header {
     padding: 30px;
 }
 
-#logo {
 
 
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3em;
-    color: #263238;
 
-}
-
-#logo_inverted {
-
-
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3em;
-    color: #f8f9f9;
-
-}
-
-#logo,
 nav {
     flex: 50%;
     overflow: hidden;
@@ -340,6 +322,10 @@ body#body_inverted {
 
 }
 
+.mobile_ai_img{
+    display: none;
+}
+
 
 /*-----------video in airobot------*/
 video {
@@ -426,12 +412,12 @@ video {
     display: none;
 }
 
-/*Small devices (landscape phones, less than 1024px)*/
+/*-------------------------Small devices (landscape phones, less than 1024px)---------------------------------*/
 
 @media (max-width: 1024px) {
     
     header {
-    padding: 0 1em;
+    padding: 1em;
 }
     
     .intro_h1 {
@@ -447,6 +433,8 @@ video {
 }
 
     /*-----------USABILITY-----------------*/
+    
+  
     #extro_usability {
         display: none;
         background-color: rgba(255, 255, 255, 1);
@@ -509,6 +497,15 @@ video {
         padding: 2em 0em;
 
     }
+    
+    #ai_video {
+        display: none;
+    }
+    
+    .mobile_ai_img{
+    display: block;
+    padding: 2em 0;
+}
  
     .list_nav {display: none;}
     .back_nav {
