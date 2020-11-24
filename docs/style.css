@@ -284,18 +284,41 @@ section#main_usability {
 
 /*-----------ONLY FOR OUTDOOR WEBSITE PROJECT------*/
 
+#main_outdoor{
+    padding: 0;
+}
+
+.design_approach{
+    vertical-align: middle;
+}
+.bg_wrapper{
+    
+ grid-column: span 2;
+  padding: 20em 0em;
+
+    }
+.above {
+      background:  url(Img/above-op2.jpg) no-repeat center center/cover;
+}
+#content_users{
+    color: #fff;
+    vertical-align: middle;
+}
+
 #outdoor_redesign {
     margin: auto;
+
 }
 
 #outdoor_redesign img {
     width: 150vh;
+    padding-top: 3em;
 }
 
 
 
 .text_wider {
-
+padding: 25em 0em;
     max-width: 30em;
 
 }
@@ -470,6 +493,14 @@ video {
     .mall_project {
         display: block;
         padding: 3em;
+    }
+
+    .desing_approach{
+       margin: 2em;
+    }
+    
+    .users{
+        margin: 2em;
     }
 
     .img_project img {
