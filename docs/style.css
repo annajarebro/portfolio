@@ -1,565 +1,563 @@
-/*
-----------------------------------------------------------------------------------
-
-Umeå universitet
-Institutionen för informatik
-Kurs: CSS-baserad webbdesign
-
-----------------------------------------------------------------------------------
-*/
-/*
-----------------------------------------------------------------------------------
-
-Namn: Anna Jarebro
-
-----------------------------------------------------------------------------------
-*/
-html {
-    scroll-behavior: smooth;
-}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  body {
+      padding: 0 10em;
+  }
+/*-----------FONTS-------------*/
+
+
+p,h1,h2,h3,a
+{font-family: europa, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #111111;}
+
+p{
+    font-size: 1rem;
+    color: #353535;
+}
+
+.p-bold{
+    font-weight: 700;
 }
 
 
-/*----------------------------------------USABILITY BACKGROUND--------------------------------*/
-
-#bg {
-    position: fixed;
-    left: 0;
-    top: 30vh;
-    height: 70vh;
-    width: 100vw;
-    background: url(Img/omni-bg-op.jpg);
-    background-size: auto 100%;
-    /* background-repeat: repeat-x;*/
-    background-position: 0 0;
-    z-index: -1;
+/*-----------32px, use for intro text on index and project categories-------------*/
+h1{
+    font-size: 2rem;
+    padding-top: 35vh;
+    padding-bottom: 3em;
 }
 
-/*-----------------------------------------BODY--------------------------------*/
-body {
-
-    font-family: acumin-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    background: #fff;
-    color: #263238;
-
-
+.hi-bold{
+    font-weight: 700;
 }
 
-body#body_index {
-    height: 100vh;
-    line-height: 1.6;
-    overflow: hidden;
-}
-
-/*-------------------------------TEXT SIZE AND STYLE ----------------------*/
-h1,
-h2,
-a {
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-}
-
-
-
-h1 {
-
-    font-size: 1.4em;
-    color: #263238;
+.h1-gray {
+    font-weight: 700;
+    color:#DADADA;
+    padding-top: 5em;
     padding-bottom: 2em;
 }
 
-.intro_h1 {
+/*-----------20px, use for project headings -------------*/
 
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4vh;
-    padding-top: 3em;
-
-
+h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #353535;
 }
 
-.h1_inverted {
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3.5vh;
-    padding-top: 3em;
-    color: #f8f9f9;
-}
 
-h2 {
-    font-size: 1.2em;
-    font-weight: 100;
-}
+/*-----------NAVIGATION-------------*/
 
-h3 {
-    font-size: 1em;
+
+  /* Main menu settings */
+#centeredmenu {
+    clear:both;
+    float:left;
+    margin:0;
+    padding:1.5em 0;
+    width:100%;
+    z-index:1000; /* This makes the dropdown menus appear above the page content below */
+    position:relative;
+ }
+ 
+ /* Top menu items */
+ #centeredmenu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    float:right;
+    position:relative;
+    right:50%;
+ }
+ #centeredmenu ul li {
+    margin:0 0 0 1em;
+    padding:0;
+    float:left;
+    position:relative;
+    left:50%;
+    top:1px;
+ }
+ #centeredmenu ul li a {
+    display:block;
+    font-weight: 700;
+    margin:0;
+    padding:.6em .5em .4em;
+    line-height:1em;
+    text-decoration:none;
+ }
+
+
+ /* Submenu items */
+ #centeredmenu ul ul {
+    display:none; /* Sub menus are hiden by default */
+    position:absolute;
+    font-weight: 700;
+    top:2em;
+    left:0;
+    right:auto; /*resets the right:50% on the parent ul */
+    width:10em; /* width of the drop-down menus */
+ }
+ #centeredmenu ul ul li {
+    left:auto;  /*resets the left:50% on the parent li */
+    margin:0; /* Reset the 1px margin from the top menu */
+    clear:left;
+    width:100%;
+ }
+ #centeredmenu ul ul li a,
+ #centeredmenu ul li.active li a,
+ #centeredmenu ul li:hover ul li a,
+ #centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below */
+    font-size:.8em;
     font-weight: bold;
+ 
     text-transform: uppercase;
+    font-weight:normal; /* resets the bold set for the top level menu items */
+    columns: #111111;
+    line-height:1.4em; /* overwrite line-height value from top menu */
+
+ }
+ /* ----------ADDS BACKGROUND ON SUBNAV
+ #centeredmenu ul ul li a:hover,
+ #centeredmenu ul li.active ul li a:hover,
+ #centeredmenu ul li:hover ul li a:hover,
+ #centeredmenu ul li.hover ul li a:hover { /* This line is required for IE 6 and below 
+   
+ }
+
+ 
+ /* Flip the last submenu so it stays within the page */
+ #centeredmenu ul ul.last {
+    left:auto; /* reset left:0; value */
+    right:0; /* Set right value instead */
+ }
+ 
+ /* Make the sub menus appear on hover */
+ #centeredmenu ul li:hover ul,
+ #centeredmenu ul li.hover ul { /* This line is required for IE 6 and below */
+    display:block; 
+    /* Show the sub menus */
+ }
+
+ #centeredmenu li:hover{
+     text-decoration: underline;
+ }
+  
 
 
-}
+  /*-----------INTRO SECTION------------*/
 
-p {
-    font-size: 0.9em;
-    text-align: justify;
-}
+  .intro{
+      text-align: center;
+       
+  }
 
-.center_p {
+  button {
+    background-color: #FFFFFF; 
+   
+    color: #111111;
+  font-size: 0.9em;
+    border: 2px solid #111111;
+    padding: 6px 32px;
     text-align: center;
-}
-
-
-a {
-
-    font-size: 1em;
-    color: #FFF;
-}
-
-
-
-
-
-/*---------------------------------HEADER & PROJECT NAV---------------------------------------*/
-
-/* Two column header*/
-
-header {
-    display: flex;
-    padding: 30px;
-}
-
-
-
-
-nav {
-    flex: 50%;
-    overflow: hidden;
-    padding-bottom: 0;
-}
-
-nav {
-    text-align: right;
-}
-
-nav ul {
-
-    padding-top: 0.4em;
-
-}
-
-/* Vertical list*/
-nav ul li {
-    display: inline;
-}
-
-/* Style of navigation links*/
-nav a {
-    color: #85929E;
-    padding: 0 1em;
-    font-size: 1em;
-}
-
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.active#active_white {
-    color: #FFF;
-}
-
-.active {
-    color: #263238;
-}
-
-.active:hover {
     text-decoration: none;
-    cursor: default;
-}
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 32px;
+  }
+  button a {
+      font-weight: 700;
+      text-decoration: none;
+  }
 
 
+  
+  button:hover{
+    background-color: #111111;
+    color: white;
+  }
+  button a:hover{
+    color: white;
+  }
 
+ /*--------------------PROJECTS--------------------*/
 
-/*------------------------PROJECTS----------------------------------------------*/
-/*---------Template for all projects --------*/
-/*-----------creating 2-colum grid grid------*/
-.mall_project {
+  .pr-h1 {
+      text-align: center;
+  }
+ /*--------------------With thext use 1fr 44em, padding right 16em--------------------*/
+  .proj-rg{
+    
+      padding-bottom: 2em;
+  
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vh;
-    padding: 3em;
-}
-
-
-/*-----------special for usability to greate solid background for rows------*/
-section#main_usability {
-    padding: 0;
-}
-
-#main_usability {
-    grid-gap: 0;
-
-}
-
-
-/*-----------makes intro into one column------*/
-.intro {
-    grid-column: span 2;
-    text-align: center;
-    margin: auto;
-}
-
-.intro img {
-    width: 100%;
-}
-
-
-/*-----------MAIN CONTENT IN PROJECTS------*/
-.content {
-    grid-column: span 2;
-    margin: auto;
-
-}
-
-.content_text {
-    grid-column: span 2;
-    margin: auto;
-    max-width: 40rem;
-    padding: 4em;
-}
-
-
-
-.project_h2 {
-    text-align: center;
-    padding: 1em;
-
-}
-
-.text_project {
-    margin: auto;
-    max-width: 20em;
-    text-align: left;
+     
+     
+  }
+  .proj-lf{
+ 
     padding-bottom: 2em;
 
 }
+  .proj-img{
+      margin: auto;
+      position: relative;
+      height: 28em;
+      width: 44em;
+      
+  }
 
-.img_project {
-    margin: auto;
 
+ 
+ .proj-img img {
+      display: block;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+  }
+
+
+
+
+
+
+
+.link-proj{
+    display: block;
 }
 
-.img_project img {
-    width: 80vh;
-}
-
-
-
-.next_project {
-    grid-column: span 2;
-    text-align: center;
-    padding-right: 2em;
-
-}
-
-#next {
-    font-size: 1em;
-    color: #212121;
-}
-
-#next_inverted {
-    font-size: 1em;
-}
-
-/*-----------ONLY FOR OUTDOOR WEBSITE PROJECT------*/
-
-#main_outdoor{
-    padding: 0;
-}
-
-.design_approach{
-    vertical-align: middle;
-}
-.bg_wrapper{
-    
- grid-column: span 2;
-  padding: 20em 0em;
-
-    }
-.above {
-      background:  url(Img/above-op2.jpg) no-repeat center center/cover;
-}
-#content_users{
-    color: #fff;
-    vertical-align: middle;
-}
-
-#outdoor_redesign {
-    margin: auto;
-
-}
-
-#outdoor_redesign img {
-    width: 150vh;
-    padding-top: 3em;
-}
-
-
-
-.text_wider {
-padding: 25em 0em;
-    max-width: 30em;
-
-}
-
-.user_hd {
-    font-weight: 600;
-}
-
-
-/*-----------ONLY FOR AI ROBOT PROJECT------*/
-
-body#body_inverted {
-    background-color: #18233d;
-    color: #F8F9F9;
-}
-
-#img_scenario {
-    padding-bottom: 5em;
-}
-
-.empty {
-    grid-column: span 2;
-    height: 50vh;
-
-}
-
-.mobile_ai_img {
-    display: none;
-}
-
-
-/*-----------video in airobot------*/
-video {
-    grid-column: span2;
-    max-width: 150vh;
-    height: auto;
-    padding: 6em;
-
-}
-
-/*-----------ONLY FOR USABILITY WEBSITE PROJECT------*/
-
-
-
-.rows {
-    grid-column: span 2;
+ /*----------HOVER IMG OVERLAY---------*/
+ .proj-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+.proj-img:hover{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0, 0.9));
+    background-size: cover;
+    cursor: pointer;
+  
 }
 
-#into_usability {
-    background-color: rgba(255, 255, 255, 0.9);
-    margin: 0;
-    padding: 2em 0 3em 0;
+.proj-img-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
 
+.proj-img-overlay:hover {
+    opacity: 1;
+}
+
+.proj-img-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.h2-overlay{
+    color: #ffffff;
+}
+
+ /*--------------------ABOUT--------------------*/
+ 
+#about{
+  margin-top: 60vh;
+    height: 45em;
+    
+    
+}
+
+.about-text{
+    float: left;
+    width: 50%;
+    padding-right: 20%;
+    height: 45em;
+  
+    
+}
+.about-text p {
+    padding-bottom: 1em;
+}
+
+.about-img {
+    float: right;
+    height: 45em;
+    width: 50%;
 
 }
 
-
-#extro_usability {
-    background-color: rgba(255, 255, 255, 1);
-    margin: 0;
-    padding: 3em 0 5em 0;
+.about-img img {
+    width: 80%;
+    height: auto;
 
 }
-
-#extro_small {
-    display: none;
+ 
+.h1-hello{
+    padding: 50% 0 1em 0;
+    
+   
+    
 }
 
+.credits{
+    padding-top: 30em;
+    padding-bottom: 1em;
+    text-align: center;
 
-#next_proj_inverted {
-    color: #f8f9f9;
 }
-
-
-
-#personal_note {
-    width: 60em;
-    padding-top: 15em;
-    font-style: italic;
-}
-
-#goal {
-    padding: 0em 0em 7em 0em;
-    max-width: 40em;
+.back-to-top{
+    padding-top: 30em;
     text-align: center;
 }
+.back-to-top a {
+    text-decoration: none;
+}
 
-#mockup_p {
-    padding-bottom: 7em;
+.back-to-top.pad {
+    padding-bottom: 10em;
+}
+ /*-------------------------------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ ---------------------------------PROJECT MARGING-----------------------------------------
+ -----------------------------------------------------------------------------
+ -------------------------------------------------------------------------------*/
+.project-wrapper{
+    padding: 0 10em;
+
+}
+ /*-------------------------------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ ----------------------------------PROJECTS------------------------------------------
+ -----------------------------------------------------------------------------
+ -------------------------------------------------------------------------------*/
+
+
+.head img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+ 
+}
+.head video{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+ 
+}
+
+.summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 6em 0;
 }
 
 
+.header-text{
+    padding-bottom: 15em;
+}
+.summary ul li{
+    list-style-type: none; 
+    font-family: europa, sans-serif;
+font-weight: 400;
+font-size: 0.9em;
+font-style: normal;
+color: #565656;
+}
 
-.img_project_wf {}
 
-.img_wireframe {
+  .content-li{
+    position: relative;
+    left:30%;
+      display: block;
+      justify-self: center;
+      
+  } 
+
+.content ul li{
+list-style-position: inside;
+font-family: europa, sans-serif;
+font-weight: 700;
+font-style: normal;
+color: #565656;
+padding: 0.5em 0;
+
+}
+
+
+.content ul{
+   padding: 0 0 4em 0;
+  
+}
+
+.content.tighter p {
+    max-width: 60%;
+    margin: auto;
+}
+.learning-li ul li{
+    font-family: europa, sans-serif;
+    list-style-position: outside;
+  font-weight: 400;
+  padding: 0.5em 0;
+  max-width: 40em;
+}
+
+.h2-proj{
+    padding-bottom: 1em;
+}
+
+.h2-proj.small{
+    font-size: 1em;
+}
+
+
+.h2-center{
+text-align: center;
+padding: 1em 0;
+}
+.h2-center.pad10{
+    padding-top: 10em;
+}
+
+.content img {
+    
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 30em;
+    object-fit: contain;
+}
+
+.content p {
     padding: 2em 0;
 }
 
-.list {
-    font-size: 0.9rem;
-    padding-left: 1.3rem;
-    padding-top: 1rem;
+.learnings{
+    padding: 0 15em;
+}
+.learnings h2 {
+    padding-bottom: 3em;
 }
 
-.list li {
-    padding: 0.1rem;
+
+ /*-------------------------------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ -------------------------------------------------------------------------------*/
+ /*-----------MOBILE VERISION------------*/
+  
+  @media (max-width: 767.98px) { 
+      
+    body{
+        padding: 0 0;
+    }
+
+    .proj-rg{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-bottom: 1em;
+       
+    }
+    .proj-lf{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-bottom: 0;
+       
+    }
+
+  .proj-text {
+     display: none;
+  }
+
+  .proj-img img {
+    display: block;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+.proj-img{width: 100%;
+    padding: 0;
 }
 
-.back_nav {
+.proj-img-overlay{
+  display: none;
+  }
+  .proj-img:hover{
+    background: none;
+
+  
+}
+
+#about{
+    background-color: teal;
+    height: 40em;
+    
+}
+
+.about-text{
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    height: 40em;
+  
+    
+}
+.about-text p {
+    padding-bottom: 1em;
+}
+
+.about-img {
+    float: none;
+
+    height: 40em;
+    width: 100%;
+    object-fit: cover;
+
+}
+/*
+.about-img img{
     display: none;
 }
-
-/*-------------------------Small devices (landscape phones, less than 1024px)---------------------------------*/
-
-@media (max-width: 1024px) {
-
-    header {
-        padding: 1em;
-    }
-
-    .intro_h1 {
-
-        padding-top: 0em;
-    }
-
-
-    .h1_inverted {
-
-        padding-top: 0em;
-
-    }
-
-    /*-----------USABILITY-----------------*/
-
-
-    #extro_usability {
-        display: none;
-        background-color: rgba(255, 255, 255, 1);
-        margin: 0;
-
-    }
-
-    #extro_small {
-        display: block;
-        background-color: rgba(255, 255, 255, 1);
-        margin: auto;
-
-    }
-
-    .rows {
-
-        display: block;
-        background-color: rgba(255, 255, 255, 0.9);
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-
-    .text_project {
-        margin: auto;
-        max-width: 100%;
-        text-align: left;
-        padding: 2em 2em;
-
-    }
-
-
-
-    /*-----------OUTDOOR-----------------*/
-    .mall_project {
-        display: block;
-        padding: 3em;
-    }
-
-    .desing_approach{
-       margin: 2em;
-    }
+*/
+.h1-hello{
+    padding: 1em 0 1em 0;
     
-    .users{
-        margin: 2em;
-    }
 
-    .img_project img {
-        width: 100%;
-    }
-
-    #outdoor_redesign img {
-        width: 100%;
-    }
-
-    .content_text {
-        padding: 0em;
-    }
-
-    /*-----------AI ROBOT PROJECT------*/
-
-
-
-
-    /*-----------video in airobot------*/
-
-
-    #ai_video {
-        display: none;
-    }
-
-    .mobile_ai_img {
-       
-        display: block;
-        padding: 2em 0em;
-    }
-    .mobile_ai_img img {
-        width: 100%;
-       
-    }
-
-    .list_nav {
-        display: none;
-    }
-
-    .back_nav {
-        display: block;
-        text-align: left;
-
-    }
-
-    .back_white {
-        color: white;
-    }
-
-
-    #personal_note {
-        width: 100%;
-
-    }
-
-
-
-    .details {
-        padding-bottom: 7em;
-    }
 }
+
+
+/*------------------------------OMNI----------------*/
+.project-wrapper{
+    padding: 0;
+}
+.summary{
+    display: none;
+}
+  }
