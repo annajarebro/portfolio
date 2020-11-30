@@ -88,40 +88,50 @@ h2{
  #centeredmenu ul li a {
     display:block;
     font-weight: 700;
+    
+    color: #DADADA;
     margin:0;
     padding:.6em .5em .4em;
     line-height:1em;
     text-decoration:none;
  }
+ #centeredmenu ul li a:hover{
+    color: #111111;
+}
+#centeredmenu ul li a.active{
+    color: #111111;
+}
+ 
 
-
- /* Submenu items */
+/*
+ /* Submenu items *//*
  #centeredmenu ul ul {
-    display:none; /* Sub menus are hiden by default */
+    display:none; /* Sub menus are hiden by default *//*
     position:absolute;
     font-weight: 700;
     top:2em;
     left:0;
     right:auto; /*resets the right:50% on the parent ul */
-    width:10em; /* width of the drop-down menus */
- }
+   /* width:10em; /* width of the drop-down menus */
+ /*}
  #centeredmenu ul ul li {
     left:auto;  /*resets the left:50% on the parent li */
-    margin:0; /* Reset the 1px margin from the top menu */
-    clear:left;
+    /*margin:0; /* Reset the 1px margin from the top menu */
+   /* clear:left;
     width:100%;
  }
+ /*
  #centeredmenu ul ul li a,
  #centeredmenu ul li.active li a,
  #centeredmenu ul li:hover ul li a,
- #centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below */
+ #centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below *//*
     font-size:.8em;
     font-weight: bold;
- 
+    background-color: #FFFFFF;
     text-transform: uppercase;
-    font-weight:normal; /* resets the bold set for the top level menu items */
+    font-weight:normal; /* resets the bold set for the top level menu items *//*
     columns: #111111;
-    line-height:1.4em; /* overwrite line-height value from top menu */
+    line-height:1.4em; /* overwrite line-height value from top menu *//*
 
  }
  /* ----------ADDS BACKGROUND ON SUBNAV
@@ -133,23 +143,20 @@ h2{
  }
 
  
- /* Flip the last submenu so it stays within the page */
- #centeredmenu ul ul.last {
-    left:auto; /* reset left:0; value */
-    right:0; /* Set right value instead */
+ /* Flip the last submenu so it stays within the page *//*
+ #centeredmenu ul ul.last {*/
+ /* reset left:0; value 
+    right:0; /* Set right value instead 
  }
  
- /* Make the sub menus appear on hover */
+ /* Make the sub menus appear on hover 
  #centeredmenu ul li:hover ul,
- #centeredmenu ul li.hover ul { /* This line is required for IE 6 and below */
+ #centeredmenu ul li.hover ul { /* This line is required for IE 6 and below 
     display:block; 
-    /* Show the sub menus */
+    Show the sub menus 
  }
+*/
 
- #centeredmenu li:hover{
-     text-decoration: underline;
- }
-  
 
 
   /*-----------INTRO SECTION------------*/
@@ -178,7 +185,7 @@ h2{
   button a {
       font-weight: 700;
       text-decoration: none;
-      
+
       padding: 8px 0;
   }
 
@@ -255,14 +262,14 @@ h2{
     opacity: 0;
     transition: opacity 0.25s;
   }
-
+/* PROB NOT NEED THIS ONE
 .proj-img:hover{
     background: linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0, 0.9));
     background-size: cover;
     cursor: pointer;
   
 }
-
+*/
 .proj-img-overlay > * {
     transform: translateY(20px);
     transition: transform 0.25s;
@@ -283,34 +290,47 @@ h2{
  /*--------------------ABOUT--------------------*/
  
 #about{
-  margin-top: 60vh;
-    height: 45em;
-    
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ min-width: 40em;
+ grid-gap: 6em;
+ margin: auto;
+ 
+ 
     
 }
 
 .about-text{
-    float: left;
-    width: 50%;
-    padding-right: 20%;
-    height: 45em;
+    
+   min-width: 25em;
+   max-width: 40em;
+   padding-top: 8em;
+
+    
   
     
 }
 .about-text p {
     padding-bottom: 1em;
+ 
+
 }
 
 .about-img {
-    float: right;
-    height: 45em;
-    width: 50%;
+  
+    min-width: 30em;
+    max-width: 35em;
+    justify-self: center;
+   
 
 }
 
 .about-img img {
-    width: 80%;
+    
+    width: 100%;
     height: auto;
+    padding-top: 5em;
+
 
 }
  
@@ -330,13 +350,21 @@ h2{
 .back-to-top{
     padding-top: 30em;
     text-align: center;
+    padding-bottom: 8em;
 }
 .back-to-top a {
     text-decoration: none;
 }
 
-.back-to-top.pad {
-    padding-bottom: 10em;
+
+
+.btn{
+    padding-top: 4m;
+    text-align: center;
+}
+
+.btn p {
+    padding-bottom: 4em;
 }
  /*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
@@ -471,61 +499,58 @@ padding: 1em 0;
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
  /*-----------MOBILE VERISION------------*/
+
+   
+ @media (max-width: 800px) { 
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em 0;
+    }
+ }
   
   @media (max-width: 767.98px) { 
+#about{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em 0;
+}
       
     body{
-        padding: 0 0;
+        padding: 0 0.5em;
     }
 
-    .proj-rg{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-right: 0;
-        padding-bottom: 0;
-        padding-bottom: 1em;
+
+
+
+
+    .about-text{
+    
+        min-width: 25em;
+        max-width: 40em;
+        padding-top: 8em;
+     
+         
        
-    }
-    .proj-lf{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-left: 0;
-        padding-bottom: 0;
-       
-    }
+         
+     }
+     .about-text p {
+         padding-bottom: 1em;
+      
+     
+     }
+     
 
-  .proj-text {
-     display: none;
-  }
-
-  .proj-img img {
-    display: block;
-    background-size: cover;
-    height: auto;
-    width: 100%;
-}
-.proj-img{width: 100%;
-    padding: 0;
-}
-
-.proj-img-overlay{
-  display: none;
-  }
-  .proj-img:hover{
-    background: none;
-
-  
-}
 
 #about{
-    background-color: teal;
-    height: 40em;
+    
+    height: auto;
     
 }
 
 .about-text{
     float: none;
-    width: 100%;
+    width: 100vw;
     padding-right: 0;
     height: 40em;
   
@@ -537,21 +562,41 @@ padding: 1em 0;
 
 .about-img {
     float: none;
-
-    height: 40em;
-    width: 100%;
-    object-fit: cover;
+    height: auto;
+    width: 100vw;
+    object-fit: contain;
 
 }
-/*
 .about-img img{
-    display: none;
+    width: 100%;
+    padding-top: 0;
 }
-*/
-.h1-hello{
-    padding: 1em 0 1em 0;
-    
 
+.h1-hello{
+    padding: 1em 0 1em 0; 
+
+}
+.learning-li ul li{
+   
+  max-width: 100vw;
+}
+.content ul{
+    padding: 0 0 0 0;
+   
+ }
+ .learnings{
+    padding: 0 0;
+}
+.content-li{
+
+    left:0%;
+   
+      
+  } 
+
+  .content.tighter p {
+    max-width: 100%;
+ 
 }
 
 
