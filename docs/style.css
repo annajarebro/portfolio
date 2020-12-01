@@ -208,10 +208,7 @@ h2{
   .proj-rg{
     
       padding-bottom: 2em;
-  
-
-     
-     
+    
   }
   .proj-lf{
  
@@ -225,8 +222,6 @@ h2{
       width: 44em;
       
   }
-
-
  
  .proj-img img {
       display: block;
@@ -234,11 +229,6 @@ h2{
       height: 100%;
       width: 100%;
   }
-
-
-
-
-
 
 
 .link-proj{
@@ -357,6 +347,18 @@ h2{
 }
 
 
+.back-to-top#backhome{
+    padding-top: 4em;
+}
+
+.back-to-top#backhome a{
+    font-weight: 700;
+    color: #DADADA;
+}
+.back-to-top#backhome a:hover{
+    
+    color: #111111;
+}
 
 .btn{
     padding-top: 4m;
@@ -486,7 +488,7 @@ padding: 1em 0;
 }
 
 .learnings{
-    padding: 0 15em;
+    padding: 0 15vw 10em;
 }
 .learnings h2 {
     padding-bottom: 3em;
@@ -510,66 +512,46 @@ padding: 1em 0;
  }
   
   @media (max-width: 767.98px) { 
-#about{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 2em 0;
-}
+
       
     body{
         padding: 0 0.5em;
+       
     }
 
-
-
-
-
-    .about-text{
-    
-        min-width: 25em;
-        max-width: 40em;
-        padding-top: 8em;
-     
-         
-       
-         
-     }
-     .about-text p {
-         padding-bottom: 1em;
+    .proj-img{
+        
       
-     
-     }
-     
+        height: 28em;
+        width: 100vw;
+        
+        
+    }
+   
+   .proj-img img {
+       object-fit: cover;
+        height: 100%;
+        width: 100%;
+        
+    }
 
-
-#about{
-    
-    height: auto;
-    
-}
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em 0;
+    }
 
 .about-text{
-    float: none;
-    width: 100vw;
+  
+    width: 90vw;
     padding-right: 0;
     height: 40em;
   
     
 }
-.about-text p {
-    padding-bottom: 1em;
-}
 
-.about-img {
-    float: none;
-    height: auto;
-    width: 100vw;
-    object-fit: contain;
-
-}
 .about-img img{
-    width: 100%;
-    padding-top: 0;
+   display: none;
 }
 
 .h1-hello{
@@ -590,14 +572,15 @@ padding: 1em 0;
 .content-li{
 
     left:0%;
-   
-      
+       
   } 
 
   .content.tighter p {
     max-width: 100%;
  
 }
+
+
 
 
 /*------------------------------OMNI----------------*/
