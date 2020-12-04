@@ -299,6 +299,10 @@ h2{
     
 }
 
+.side.idf a img {
+    object-fit: contain;
+}
+
 .side{
     margin: auto;
 width: 20em;
@@ -432,7 +436,7 @@ height: 20em;
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
 .project-wrapper{
-    padding: 0 20em;
+    padding: 0 10vw;
 
 }
  /*-------------------------------------------------------------------------------------------------------------------
@@ -513,6 +517,7 @@ padding: 0.5em 0;
   font-weight: 400;
   padding: 0.5em 0;
   max-width: 40em;
+  margin: auto;
 }
 
 .h2-proj{
@@ -546,7 +551,7 @@ padding: 1em 0;
 }
 
 .learnings{
-    padding: 0 15vw 10em;
+    padding-bottom: 10em;
 }
 .learnings h2 {
     padding-bottom: 3em;
@@ -672,6 +677,10 @@ padding: 1em 0;
  .content.tighter p {
     max-width: 100%;
    
+}
+
+.learnings{
+    padding: 0 0 10em;
 }
  }
  /*-----------MOBILE VERISION------------*/
