@@ -294,14 +294,13 @@ h2{
     justify-content: flex-start;
    
 }
-.side.tenchallenge a img{ 
-    object-fit: cover;
-    
-}
 
-.side.idf a img {
+
+.side a img {
     object-fit: contain;
 }
+
+
 
 .side{
     margin: auto;
@@ -691,6 +690,11 @@ padding: 1em 0;
         display: grid;
         grid-template-columns: 1fr;
         padding: 2em 0;
+    }
+
+    .side-wrapper{
+        display: block;
+
     }
  }
   
