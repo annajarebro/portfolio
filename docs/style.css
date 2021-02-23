@@ -298,14 +298,16 @@ h2{
 
 .side a img {
     object-fit: contain;
+    
 }
 
 
-
 .side{
-    margin: auto;
+margin: auto;
 width: 20em;
 height: 20em;
+
+
 }
 
 .side:hover{
@@ -722,7 +724,7 @@ padding: 1em 0;
         padding: 2em 0;
         min-width: 95vw;
         max-width: 95vw;
-        background-color: #34A50F;
+    
     }
 
 
@@ -736,7 +738,7 @@ padding: 1em 0;
     height: 40em;
     min-width: 95vw;
     max-width: 95vw;
-    background-color: #2067BC;
+  
   
     
 }
@@ -781,4 +783,13 @@ padding: 1em 0;
 .summary{
     display: none;
 }
+/*-----------------------------SIDE PROJ----------------*/
+.grid {
+    margin: auto;
+     display: block;
+ 
+
+ }
+ 
+ 
   }
