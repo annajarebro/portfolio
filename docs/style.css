@@ -11,25 +11,39 @@
 /*-----------FONTS-------------*/
 
 
-p,h1,h2,h3,a
-{font-family: europa, sans-serif;
-font-weight: 400;
+h1,h2,h3,a
+{font-family: 'Lato', sans-serif;
 font-style: normal;
-color: #111111;}
+color: #111111;
+font-weight: 400;}
 
-p{
+
+p{  font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    color: #353535;
+    color: #ABABAB;
+    line-height: 1.6;
 }
 
 .p-bold{
-    font-weight: 700;
+    
+    color: #404040;
+}
+
+.h2-quote{
+    color: #A19FC5;
+    text-align: center;
+
+
+}
+
+.p-center{
+    text-align: center;
 }
 
 
 /*-----------32px, use for intro text on index and project categories-------------*/
 h1{
-    font-size: 2rem;
+    font-size: 1.9rem;
     padding-top: 35vh;
     padding-bottom: 3em;
 }
@@ -109,6 +123,7 @@ h2{
 
   .intro{
       text-align: center;
+      padding-bottom: 16em;
        
   }
 
@@ -154,6 +169,7 @@ h2{
 
   .pr-h1 {
       text-align: center;
+   
 
   }
  /*--------------------With thext use 1fr 44em, padding right 16em--------------------*/
@@ -262,7 +278,7 @@ height: 20em;
 }
 
 .side:hover{
-    border-style: solid;
+    width: 21em;
    
 }
 .side img {
@@ -388,7 +404,7 @@ height: 20em;
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
 .project-wrapper{
-    padding: 0 10vw;
+    padding: 0 6vw;
 
 }
  /*-------------------------------------------------------------------------------------------------------------------
@@ -417,21 +433,22 @@ height: 20em;
 
 .summary{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 6em 0;
+    grid-auto-flow: column;
+    justify-items: center;
+    padding: 6em 0em;
 }
-
 
 .header-text{
     padding-bottom: 6em;
 }
 .summary ul li{
     list-style-type: none; 
-    font-family: europa, sans-serif;
-font-weight: 400;
-font-size: 0.9em;
-font-style: normal;
-color: #565656;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    font-style: normal;
+    color: #565656;
+    
 }
 
 
@@ -445,7 +462,7 @@ color: #565656;
 
 .content ul li{
 list-style-position: inside;
-font-family: europa, sans-serif;
+font-family: 'Open Sans', sans-serif;
 font-weight: 700;
 font-style: normal;
 color: #565656;
@@ -464,7 +481,7 @@ padding: 0.5em 0;
     margin: auto;
 }
 .learning-li ul li{
-    font-family: europa, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     list-style-position: outside;
   font-weight: 400;
   padding: 0.5em 0;
@@ -626,20 +643,22 @@ padding: 1em 0;
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
  @media (max-width: 1669px) { 
- .content.tighter p {
-    max-width: 100%;
-   
-}
+    .content.tighter p {
+        max-width: 70%;
+       
+    }
 
 .learnings{
     padding: 0 0 10em;
 }
  }
+
+ 
  /*-----------MOBILE VERISION------------*/
 
    
  @media (max-width: 800px) { 
-  
+    
 
     .side-wrapper{
         display: block;
