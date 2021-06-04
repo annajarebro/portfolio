@@ -9,6 +9,102 @@
     <link rel="icon" type="image/png" href="/Index_img/myicone-08.png">
 
     <title>Anna Jarebro</title>
+    <script type="text/javascript">
+    /*change image on mouseover*/
+
+    function setNewImg1()
+    {
+       document.getElementById("about-img-1").src = "/about_img/about-1-img.jpg";
+     
+    }
+
+    function setOldImg1()
+    {
+        document.getElementById("about-img-1").src = "/about_img/about-1.png";
+    }
+    /*----------second img------------*/
+    function setNewImg2()
+    {
+       document.getElementById("about-img-2").src = "/about_img/about-2-img.jpg";
+     
+    }
+
+    function setOldImg2()
+    {
+        document.getElementById("about-img-2").src = "/about_img/about-2.png";
+    }
+    /*----------third img------------*/
+    function setNewImg3()
+    {
+       document.getElementById("about-img-3").src = "/about_img/about-3-img.jpg";
+     
+    }
+
+    function setOldImg3()
+    {
+        document.getElementById("about-img-3").src = "/about_img/about-3.png";
+    }
+
+    /*----------forth img------------*/
+    function setNewImg4()
+    {
+       document.getElementById("about-img-4").src = "/about_img/about-4-img.jpg";
+     
+    }
+
+    function setOldImg4()
+    {
+        document.getElementById("about-img-4").src = "/about_img/about-4.png";
+    }
+
+    /*----------fith img------------*/
+    function setNewImg5()
+    {
+       document.getElementById("about-img-5").src = "/about_img/about-5-img.jpg";
+     
+    }
+
+    function setOldImg5()
+    {
+        document.getElementById("about-img-5").src = "/about_img/about-5.png";
+    }
+      /*----------six img------------*/
+
+    function setNewImg6()
+    {
+       document.getElementById("about-img-6").src = "/about_img/about-6-img.jpg";
+     
+    }
+
+    function setOldImg6()
+    {
+        document.getElementById("about-img-6").src = "/about_img/about-6.png";
+    }
+
+         /*----------seven img------------*/
+    function setNewImg7()
+    {
+       document.getElementById("about-img-7").src = "/about_img/about-7-img.jpg";
+     
+    }
+
+    function setOldImg7()
+    {
+        document.getElementById("about-img-7").src = "/about_img/about-7.png";
+    }
+         /*----------eight img------------*/
+    function setNewImg8()
+    {
+       document.getElementById("about-img-8").src = "/about_img/about-8-img.jpg";
+     
+    }
+
+    function setOldImg8()
+    {
+        document.getElementById("about-img-8").src = "/about_img/about-8.png";
+    }
+
+    </script>
 </head>
 <body>
     <div id="centeredmenu">
@@ -20,16 +116,21 @@
         
            </li>
      </div>
-    <div id="about">
-      
-        <div class="about-text">
-            <h1 class="h1-hello"><b>Hello</b> this is me</h1>
-            <p>I've always loved being creative. At the same time, I'm also pretty good at math. This combination has continuously grown into a big passion for design, user experiences, and tech. It's also what finally made me end up here, in my last year of interaction design master's studies. I always strive to improve as a designer and a team member.  Want to discuss new ideas, design challenges, or have a chat about the weather? HMU, I'm always up for coffee!  </p>
-            <button><a href = "mailto: annajarebro@icloud.com">Drop me a line</a></button><button><a target="_blank"href="https://www.linkedin.com/in/annajarebro">Linked In</a></button>
-        </div>
-        <div class="about-img">
-            <img src="/Index_img/me.jpg">
-                </div> 
+     <div id="about-intro">
+         <h2>Hello</h2>
+         <p class="intro-p" >I am a UX/UI designer that is passioned about creatig user flows and good looks. This is me summarized in 8 pics. Want to discuss new ideas or have a chat, HMU! /Anna </p>
+         <button><a href = "mailto: annajarebro@icloud.com">Drop me a line</a></button><button><a target="_blank"href="https://www.linkedin.com/in/annajarebro">Linked In</a></button>
+    </div>
+
+    <div id="grid-wrapper">
+        <div class="grid-item first"> <img id="about-img-1" onmouseover="setNewImg1()" onmouseout="setOldImg1()" src="/about_img/about-1.png"> </div>
+        <div class="grid-item second"> <img id="about-img-2" onmouseover="setNewImg2()" onmouseout="setOldImg2()"src="/about_img/about-2.png"> </div>
+        <div class="grid-item third"> <img id="about-img-3" onmouseover="setNewImg3()" onmouseout="setOldImg3()" src="/about_img/about-3.png"> </div>
+        <div class="grid-item fourth"> <img id="about-img-4" onmouseover="setNewImg4()" onmouseout="setOldImg4()" src="/about_img/about-4.png"> </div>
+        <div class="grid-item fith"> <img id="about-img-5" onmouseover="setNewImg5()" onmouseout="setOldImg5()" src="/about_img/about-5.png"> </div>
+        <div class="grid-item six"> <img id="about-img-6" onmouseover="setNewImg6()" onmouseout="setOldImg6()" src="/about_img/about-6.png"> </div>
+        <div class="grid-item seven"> <img id="about-img-7" onmouseover="setNewImg7()" onmouseout="setOldImg7()" src="/about_img/about-7.png"></div>
+        <div class="grid-item eight"> <img id="about-img-8" onmouseover="setNewImg8()" onmouseout="setOldImg8()" src="/about_img/about-8.png"></div>
        
     </div>
 

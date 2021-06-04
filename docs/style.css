@@ -131,8 +131,8 @@ h2{
     background-color: #FFFFFF; 
    
     color: #111111;
-  font-size: 0.9em;
-    border: 2px solid #111111;
+    font-size: 0.8em;
+    border: 1px solid #111111;
     padding: 6px 32px;
     text-align: center;
     text-decoration: none;
@@ -144,7 +144,7 @@ h2{
     border-radius: 32px;
   }
   button a {
-      font-weight: 700;
+      font-weight: 400;
       text-decoration: none;
 
       padding: 8px 0;
@@ -302,8 +302,40 @@ height: 20em;
 }
 
 
- /*--------------------ABOUT--------------------*/
+ /*--------------------ABOUT NEW --------------------*/
  
+#about-intro{
+    padding-top: 20vh;
+    padding-bottom: 4em;
+    margin: auto;
+    max-width: 932px;
+
+}
+ #grid-wrapper{
+     max-width: 932px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(4, 218px);
+     gap: 20px;
+     
+
+ }
+
+ .grid-item img{
+    width: 218px;
+    height: 203px;
+    
+ }
+
+ .intro-p{
+     padding: 1em 0;
+     max-width: 40em;
+ }
+
+ 
+
+
+ /*--------------------ABOUT--------------------*/
 #about{
  display: grid;
  grid-template-columns: 1fr 1fr;
@@ -698,7 +730,15 @@ padding: 1em 0;
         max-width: 95vw;
     
     }
-
+    #grid-wrapper{
+       
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 218px);
+        gap: 20px;
+        
+   
+    }
 
      
 
