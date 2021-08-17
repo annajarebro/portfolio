@@ -14,19 +14,23 @@
 h1,h2,h3,a
 {font-family: 'Lato', sans-serif;
 font-style: normal;
-color: #111111;
+color: #04142C;
 font-weight: 400;}
 
 
 p{  font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    color: #ABABAB;
+    color: #8692A5;
+    font-weight: 400;
+    letter-spacing: 0.5pt;
     line-height: 1.6;
 }
 
 .p-bold{
     
-    color: #404040;
+    color: #04142C;
+    letter-spacing: 0.5pt;
+    
 }
 
 .h2-quote{
@@ -64,7 +68,7 @@ h1{
 h2{
     font-size: 1.25rem;
     font-weight: 700;
-    color: #353535;
+    color: #04142C;
 }
 
 
@@ -103,17 +107,17 @@ h2{
     display:block;
     font-weight: 700;
     
-    color: #DADADA;
+    color: #C8CCD2;
     margin:0;
     padding:.6em .5em .4em;
     line-height:1em;
     text-decoration:none;
  }
  #centeredmenu ul li a:hover{
-    color: #111111;
+    color: #04142C;
 }
 #centeredmenu ul li a.active{
-    color: #111111;
+    color: #04142C;
 }
  
 
@@ -130,9 +134,9 @@ h2{
   button {
     background-color: #FFFFFF; 
    
-    color: #111111;
+    color: #04142C;
     font-size: 0.8em;
-    border: 1px solid #111111;
+    border: 1px solid #04142C;
     padding: 6px 32px;
     text-align: center;
     text-decoration: none;
@@ -150,10 +154,9 @@ h2{
       padding: 8px 0;
   }
 
-
   
   button:hover{
-    background-color: #111111;
+    background-color: #04142C;
     color: white;
   }
   button a:hover{
@@ -210,7 +213,7 @@ h2{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(3, 4, 26, 0.699);
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
     display: flex;
@@ -392,12 +395,18 @@ height: 20em;
     padding-top: 30em;
     padding-bottom: 1em;
     text-align: center;
+    
 
 }
+
+.credits p{
+    font-weight: 300;
+}
+
 .back-to-top{
     padding-top: 30em;
     text-align: center;
-    padding-bottom: 8em;
+    padding-bottom: 5em;
 }
 .back-to-top a {
     text-decoration: none;
@@ -479,7 +488,7 @@ height: 20em;
     font-weight: 400;
     font-size: 0.9em;
     font-style: normal;
-    color: #565656;
+    color: #8692A5;
     
 }
 
@@ -497,7 +506,7 @@ list-style-position: inside;
 font-family: 'Open Sans', sans-serif;
 font-weight: 700;
 font-style: normal;
-color: #565656;
+color: #04142C;
 padding: 0.5em 0;
 
 }
@@ -519,6 +528,7 @@ padding: 0.5em 0;
   padding: 0.5em 0;
   max-width: 40em;
   margin: auto;
+  color: #04142C;
 }
 
 .h2-proj{
