@@ -248,61 +248,7 @@ h2{
     color: #ffffff;
 }
 
-/*--------------------SIDE PROJECTS--------------------*/
-.side-wrapper{
-    display: flex;
-    flex-direction: row;
-    padding: 0 10em;
-    
 
-}
-.side-wrapper.side.agiproj{
-    justify-content: flex-end;
-   
-}
-.side.tenchallenge{
-    justify-content: flex-start;
-   
-}
-
-
-.side a img {
-    object-fit: contain;
-    
-}
-
-
-.side{
-margin: auto;
-width: 20em;
-height: 20em;
-
-
-}
-
-.side:hover{
-    width: 21em;
-   
-}
-.side img {
-    width: 100%;
-    height: 100%;
-}
-
-.grid {
-   margin: auto;
-    display: grid;
-    grid-template-columns: 25em 25em 25em;
-    grid-gap: 0.5em;
-    align-content: center;
-    justify-content: center;
-}
-
-.grid img {
-
-    width: 100%;
-    
-}
 
 
  /*--------------------ABOUT NEW --------------------*/
@@ -427,7 +373,7 @@ height: 20em;
 }
 
 .btn{
-    padding-top: 4m;
+    padding-top: 4em;
     text-align: center;
 }
 
@@ -439,6 +385,21 @@ height: 20em;
     padding: 10em ;
    
 }
+ /*---------------------------------------------------------------------------------
+ ---------------------------------Initiatives-----------------------------------------
+ -------------------------------------------------------------------------------*/
+.img-header{
+
+padding-top: 4em;
+}
+
+.img-header img{
+    display: block;
+    width: 12em;
+    margin: auto;
+
+}
+
  /*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  ---------------------------------PROJECT MARGING-----------------------------------------
@@ -648,7 +609,7 @@ padding: 1em 0;
   }
   
   
-  /* Fading animation */
+  /* Fading animation --- slide show ---
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -665,7 +626,7 @@ padding: 1em 0;
     from {opacity: .4} 
     to {opacity: 1}
   }
-
+  */
 
   .cpanalysis p b.skype{
     color: #2067BC;
