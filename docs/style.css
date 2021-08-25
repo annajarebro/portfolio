@@ -163,6 +163,10 @@ h2{
     color: white;
   }
 
+.pad4 {
+      padding-bottom: 4em;
+  }
+
   #intro-p {
       margin: auto;
       max-width: 45em;
