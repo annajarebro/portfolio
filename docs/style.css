@@ -107,7 +107,7 @@ top: 16px;
 
 
 h2.metadata {
-    font-size: 10px;
+    font-size: 0.625rem;
     letter-spacing: 7%;
     text-transform: uppercase;
     font-weight: 400;
@@ -115,12 +115,6 @@ h2.metadata {
 }
 
 
-.h1-gray {
-    font-weight: 700;
-    color:#DADADA;
-    padding-top: 5em;
-    padding-bottom: 2em;
-}
 
 /*-----------20px, use for project headings -------------*/
 
@@ -194,7 +188,6 @@ h2{
        
   }
 
-  
 
   button {
     background-color: #FFFFFF; 
@@ -795,18 +788,13 @@ hr{
    
 
     #centeredmenu ul li a {
-    
         padding:.6em 1em .4em;
        
     }
 
     .proj-img{
-        
-      
         height: 28em;
         width: 100vw;
-        
-        
     }
    
    .proj-img img {
@@ -837,7 +825,14 @@ hr{
 
     .two-column {
         display: block;
-        padding-top: 1em;
+        padding: 1em;
+    }
+
+    .two-column h2 {
+        padding-bottom: 1em;
+    }
+    .learning-li {
+        padding-left: 1em;
     }
     
     .place-left{
@@ -847,19 +842,10 @@ hr{
         justify-self: center;
     }
      
-
-
-.about-text{
-  
-   
-    padding-right: 0;
-    height: 40em;
-    min-width: 95vw;
-    max-width: 95vw;
-  
-  
-    
+#about-intro h2{
+    padding: 1em;
 }
+
 
 .about-img img{
    display: none;
