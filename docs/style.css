@@ -10,12 +10,6 @@
   }
 
 
-  @media (min-aspect-ratio: 2/1) {
-    #show-ultrawide{
-        display: block;
-    }
-  }
-
 
   .index{
       background-color: #F9F8F6;
@@ -53,6 +47,7 @@ p{  font-family: 'Spartan', sans-serif;
 }
 .h2-italia{
     font-family: 'Italiana', serif;
+    padding-bottom: 1em;
 }
 
 .p-center{
@@ -75,6 +70,7 @@ h1{
     font-size: 14vw;
     font-family: 'Italiana', serif;
     text-align: center;
+    
 
 }
 .big-header{
@@ -83,7 +79,7 @@ h1{
 }
 
 .start{
- position: absolute;
+position: absolute;
 left: 16px;
 top: 16px;
 }
@@ -229,7 +225,8 @@ h2{
   #intro-p {
       margin: auto;
       max-width: 45em;
-      padding-top: 30em;
+      padding-top: 50vh;
+     
   }
 
  /*--------------------PROJECTS--------------------*/
@@ -325,6 +322,11 @@ h2{
     max-width: 932px;
 
 }
+
+#about-intro p {
+    max-width: 40em;
+}
+
  #grid-wrapper{
      max-width: 932px;
      margin: auto;
@@ -341,73 +343,14 @@ h2{
     
  }
 
- .intro-p{
-     padding: 1em 0;
-     max-width: 40em;
- }
-
- 
 
 
- /*--------------------ABOUT--------------------*/
-#about{
- display: grid;
- grid-template-columns: 1fr 1fr;
- min-width: 40em;
- grid-gap: 6em;
- margin: auto;
- 
- 
-    
-}
-
-.about-text{
-    
-   min-width: 25em;
-   max-width: 40em;
-   padding-top: 8em;
-
-    
-  
-    
-}
-.about-text p {
-    padding-bottom: 1em;
- 
-
-}
-
-.about-img {
-  
-    min-width: 30em;
-    max-width: 35em;
-    justify-self: center;
-   
-
-}
-
-.about-img img {
-    
-    width: 100%;
-    height: auto;
-    padding-top: 5em;
-
-
-}
- 
-.h1-hello{
-    padding: 50% 0 1em 0;
-    
-   
-    
-}
 
 .credits{
     padding-top: 30em;
     padding-bottom: 1em;
     text-align: center;
     
-
 }
 
 .credits p{
@@ -774,9 +717,6 @@ hr{
 
     }
 
-    #intro-p{
-        padding-top: 50vh;
-    }
 
     .phone-lable{
         display: block;
@@ -804,14 +744,16 @@ hr{
         
     }
 
-    #about{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 2em 0;
-        min-width: 95vw;
-        max-width: 95vw;
-    
+   
+    #about-intro{
+        padding: 6em 1em;
+
     }
+
+    #about-intro h2{
+        text-align: center;
+    }
+   
     #grid-wrapper{
        
         margin: auto;
