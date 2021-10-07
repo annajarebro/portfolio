@@ -26,17 +26,23 @@ color: #000;
 font-weight: 400;}
 
 
-p{  font-family: 'Spartan', sans-serif;
+p{  font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: #4F4F4F;
+    color: #161616;
     font-weight: 400;
-    letter-spacing: 0.5pt;
-    line-height: 1.6;
-    text-transform: lowercase;
+    letter-spacing: 0.3pt;
+    line-height: 1.8;
 }
 
 .p-bold {
     color: #000;
+}
+
+.spartan {
+    font-family: 'Spartan', sans-serif;
+    text-transform: lowercase;
+    color: #4f4f4f;
+    letter-spacing: 0.5pt;
 }
 
 
@@ -114,11 +120,7 @@ h2.metadata {
 
 /*-----------20px, use for project headings -------------*/
 
-h2{
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #04142C;
-}
+
 
 
 #show-ultrawide{
@@ -239,7 +241,7 @@ h2{
 .phone-lable{
     display: none;
 }
- /*--------------------With thext use 1fr 44em, padding right 16em--------------------*/
+ /*----------------------------------------*/
   .proj{
     
       padding-bottom: 2em;
@@ -415,15 +417,17 @@ padding-top: 4em;
  -------------------------------------------------------------------------------*/
 .project-wrapper{
     padding: 0 6vw;
-
+    max-width: 1600px;
+    
 }
  /*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  ----------------------------------PROJECTS------------------------------------------
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
-.wide{
-    padding: -1em;
+.content.tighter {
+    max-width: 800px;
+    margin: auto;
 }
 
 .head img{
@@ -434,14 +438,7 @@ padding-top: 4em;
     object-fit: cover;
  
 }
-.head video{
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
- 
-}
+
 
 .summary{
     display: grid;
@@ -491,10 +488,8 @@ padding-top: 4em;
   
 }
 
-.content.tighter p {
-    max-width: 60%;
-    margin: auto;
-}
+
+
 .learning-li ul li{
     font-family: 'Spartan', sans-serif;
     list-style-position: outside;
@@ -506,12 +501,11 @@ padding-top: 4em;
     color: #4F4F4F;
 }
 
-.h2-proj{
-    padding-bottom: 1em;
-}
 
-.h2-proj.small{
-    font-size: 1em;
+
+.h2-proj{
+    font-size: 1.25em;
+    font-weight: 700;
 }
 
 
@@ -543,30 +537,8 @@ padding: 1em 0;
 
 
 
-hr.solid {
-    border-top: 1px solid #000;
-  }
-hr{
-    margin-bottom: 2em;
-    margin-top: 1em;
-}
 
 
-.two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.place-left{
-    justify-self: left;
-}
-.place-right{
-    justify-self: right;
-}
-
-.right-alight{
-    text-align: right;
-}
  /*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  ------------------------------SLIDE SHOW MOGO----------------------------------------------
@@ -685,9 +657,8 @@ hr{
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
  @media (max-width: 1669px) { 
-    .content.tighter p {
-        max-width: 70%;
-       
+    .project-wrapper{
+        padding: 0;
     }
 
  }
@@ -696,7 +667,7 @@ hr{
  /*-----------MOBILE VERISION------------*/
 
    
- @media (max-width: 800px) { 
+ @media (max-width: 900px) { 
     
     .start{
         
@@ -723,6 +694,7 @@ hr{
     }
     body{
         padding: 0 0;
+        cursor: col-resize;
        
     }
    
@@ -754,25 +726,7 @@ hr{
         text-align: center;
     }
    
-    #grid-wrapper{
-       
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 218px);
-        gap: 20px;
-        justify-content: center;
-        
    
-    }
-
-    .two-column {
-        display: block;
-        padding: 1em;
-    }
-
-    .two-column h2 {
-        padding-bottom: 1em;
-    }
     .learning-li {
         padding-left: 1em;
     }
@@ -814,9 +768,13 @@ hr{
        
   } 
 
-  .content.tighter p {
+  .content.tighter{
+    padding: 1em;
+    
+}
+
+.content.tighter p {
     max-width: 100%;
- 
 }
 
 
