@@ -26,16 +26,16 @@ color: #000;
 font-weight: 400;}
 
 
-p{  font-family: 'Montserrat', sans-serif;
+p{  font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
-    color: #161616;
+    color: #424242;
     font-weight: 400;
-    letter-spacing: 0.3pt;
+    letter-spacing: 0.2pt;
     line-height: 1.8;
 }
 
 .p-bold {
-    color: #000;
+    color: rgb(19, 19, 19);
 }
 
 .spartan {
@@ -45,15 +45,13 @@ p{  font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.5pt;
 }
 
-
-
 .h2-quote{
     color: #A19FC5;
     text-align: center;
 }
 .h2-italia{
     font-family: 'Italiana', serif;
-    padding-bottom: 1em;
+    font-size: 2em;
 }
 
 .p-center{
@@ -224,6 +222,8 @@ h2.metadata {
       padding-bottom: 4em;
   }
 
+ 
+
   #intro-p {
       margin: auto;
       max-width: 45em;
@@ -332,8 +332,9 @@ h2.metadata {
  #grid-wrapper{
      max-width: 932px;
      margin: auto;
+     justify-content: center;
      display: grid;
-     grid-template-columns: repeat(4, 218px);
+     grid-template-columns: repeat(3, 218px);
      gap: 20px;
 
 
@@ -504,8 +505,8 @@ padding-top: 4em;
 
 
 .h2-proj{
-    font-size: 1.25em;
-    font-weight: 700;
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
 
@@ -797,13 +798,7 @@ padding: 1em 0;
 .summary{
     display: none;
 }
-/*-----------------------------SIDE PROJ----------------*/
-.grid {
-    margin: auto;
-     display: block;
- 
 
- }
  
  
   }

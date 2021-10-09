@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@400;700&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Sans:wght@400;700&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/png" href="/Index_img/myicone-08.png">
 
@@ -15,95 +15,73 @@
 
     function setNewImg1()
     {
-       document.getElementById("about-img-1").src = "/about_img/about-me-img.png";
+       document.getElementById("about-img-1").src = "/about_img/1-about.jpg";
      
     }
 
     function setOldImg1()
     {
-        document.getElementById("about-img-1").src = "/about_img/about-1.png";
+        document.getElementById("about-img-1").src = "/about_img/1-about.svg";
     }
     /*----------second img------------*/
     function setNewImg2()
     {
-       document.getElementById("about-img-2").src = "/about_img/about-2-img.jpg";
+       document.getElementById("about-img-2").src = "/about_img/2-about.jpg";
      
     }
 
     function setOldImg2()
     {
-        document.getElementById("about-img-2").src = "/about_img/about-2.png";
+        document.getElementById("about-img-2").src = "/about_img/2-about.svg";
     }
     /*----------third img------------*/
     function setNewImg3()
     {
-       document.getElementById("about-img-3").src = "/about_img/about-3-img.jpg";
+       document.getElementById("about-img-3").src = "/about_img/3-about.jpg";
      
     }
 
     function setOldImg3()
     {
-        document.getElementById("about-img-3").src = "/about_img/about-3.png";
+        document.getElementById("about-img-3").src = "/about_img/3-about.svg";
     }
 
     /*----------forth img------------*/
     function setNewImg4()
     {
-       document.getElementById("about-img-4").src = "/about_img/about-4-img.jpg";
+       document.getElementById("about-img-4").src = "/about_img/4-about.jpg";
      
     }
 
     function setOldImg4()
     {
-        document.getElementById("about-img-4").src = "/about_img/about-4.png";
+        document.getElementById("about-img-4").src = "/about_img/4-about.svg";
     }
 
     /*----------fith img------------*/
     function setNewImg5()
     {
-       document.getElementById("about-img-5").src = "/about_img/about-5-img.jpg";
+       document.getElementById("about-img-5").src = "/about_img/5-about.jpg";
      
     }
 
     function setOldImg5()
     {
-        document.getElementById("about-img-5").src = "/about_img/about-5.png";
+        document.getElementById("about-img-5").src = "/about_img/5-about.svg";
     }
       /*----------six img------------*/
 
     function setNewImg6()
     {
-       document.getElementById("about-img-6").src = "/about_img/about-6-img-n.jpg";
+       document.getElementById("about-img-6").src = "/about_img/6-about.jpg";
      
     }
 
     function setOldImg6()
     {
-        document.getElementById("about-img-6").src = "/about_img/about-6-img.png";
+        document.getElementById("about-img-6").src = "/about_img/6-about.svg";
     }
 
-         /*----------seven img------------*/
-    function setNewImg7()
-    {
-       document.getElementById("about-img-7").src = "/about_img/about-7-img-n.jpg";
-     
-    }
-
-    function setOldImg7()
-    {
-        document.getElementById("about-img-7").src = "/about_img/about-7-n.png";
-    }
-         /*----------eight img------------*/
-    function setNewImg8()
-    {
-       document.getElementById("about-img-8").src = "/about_img/about-8-img.jpg";
-     
-    }
-
-    function setOldImg8()
-    {
-        document.getElementById("about-img-8").src = "/about_img/about-8.png";
-    }
 
     </script>
 </head>
@@ -119,8 +97,9 @@
             </li>
         </ul>
      </div>
+
      <div class="content tighter pad10 pad6-bottom">
-         <h2 class="h2-italia pad10 ">hello</h2>
+         <h2 class="h2-italia pad10">hello</h2>
          <p>I'm a curious end-to-end designer that tries to learn new things as often as possible (currently doing a side project to learn Framer and AE to create smoother prototype animations).  As a design and (soon to be) engineer, I enjoy the challenge of solving complex problems and collaborate in diverse teams.  I've also managed to make my scoby (used to brew kombucha. And yes, I fell for the kombucha-hype) survive for more than a year. I would say that's quite impressive. 
             <br><br>
            I'm looking for a full-time position starting Q1 2022. Want to discuss new ideas or just have a chat? Feel free to get in touch! /Anna</p>
@@ -128,16 +107,53 @@
     </div>
 
     <div id="grid-wrapper" class="pad6-bottom">
-        <div class="grid-item first"> <img id="about-img-1" onmouseover="setNewImg1()" onmouseout="setOldImg1()" src="/about_img/about-1.png"> </div>
-        <div class="grid-item second"> <img id="about-img-2" onmouseover="setNewImg2()" onmouseout="setOldImg2()"src="/about_img/about-2.png"> </div>
-        <div class="grid-item third"> <img id="about-img-3" onmouseover="setNewImg3()" onmouseout="setOldImg3()" src="/about_img/about-3.png"> </div>
-        <div class="grid-item fourth"> <img id="about-img-4" onmouseover="setNewImg4()" onmouseout="setOldImg4()" src="/about_img/about-4.png"> </div>
-        <div class="grid-item fith"> <img id="about-img-5" onmouseover="setNewImg5()" onmouseout="setOldImg5()" src="/about_img/about-5.png"> </div>
-        <div class="grid-item six"> <img id="about-img-6" onmouseover="setNewImg6()" onmouseout="setOldImg6()" src="/about_img/about-6-img.png"> </div>
-        <div class="grid-item seven"> <img id="about-img-7" onmouseover="setNewImg7()" onmouseout="setOldImg7()" src="/about_img/about-7-n.png"></div>
-        <div class="grid-item eight"> <img id="about-img-8" onmouseover="setNewImg8()" onmouseout="setOldImg8()" src="/about_img/about-8.png"></div>
-       
+        <div class="grid-item first"> <img id="about-img-1" onmouseover="setNewImg1()" onmouseout="setOldImg1()" src="/about_img/1-about.svg"> </div>
+        <div class="grid-item second"> <img id="about-img-2" onmouseover="setNewImg2()" onmouseout="setOldImg2()"src="/about_img/2-about.svg"> </div>
+        <div class="grid-item third"> <img id="about-img-3" onmouseover="setNewImg3()" onmouseout="setOldImg3()" src="/about_img/3-about.svg"> </div>
+        <div class="grid-item fourth"> <img id="about-img-4" onmouseover="setNewImg4()" onmouseout="setOldImg4()" src="/about_img/4-about.svg"> </div>
+        <div class="grid-item fith"> <img id="about-img-5" onmouseover="setNewImg5()" onmouseout="setOldImg5()" src="/about_img/5-about.svg"> </div>
+        <div class="grid-item six"> <img id="about-img-6" onmouseover="setNewImg6()" onmouseout="setOldImg6()" src="/about_img/6-about.svg"> </div>
+
     </div>
+
+    <div class="content tighter pad10">
+        <h2 class=" h2-italia pad2">Experience</h2>
+        <p>  
+        Product Designer (Master Thesis) Hyperlab / Sep 2021 - current
+        </p>
+        <p> 
+        UX Summer Intern, Volvo Group  / Jul-Aug 2021  
+        </p>
+        <p>
+       Product Designer, Returbo / Mar-May 2021    
+        </p>
+
+        <p>
+            Board member, Pepp Gothenburg / Sep 2020 - May 2021    
+             </p>
+        
+        <p class="pad2"> 
+        Salesperson, Stadium AB /2014-2020
+        </p>
+    </div>
+
+    <div class="content tighter pad10 pad6-bottom">
+        <h2 class="h2-italia pad2">Education</h2>
+        <p >  
+            M.Sc. Interaction Desing & Technologies, Chalmers University of Technology / Sep 2019 - current
+        </p>
+        <p > 
+            M.Sc. Design and Innovation,  (同济大学) Tongji University, Shanghai, China / Sep - Dec 2019  
+        </p>
+        <p>
+            B.Sc. Industrial Design Engineering,  Chalmers University of Technology / Sep 2016 - May 2019
+        </p>
+        <p>
+            Extracurricular courses / Graphical Design, Graphical design for web, Webdesign for usability, HTML & CSS, JavaScript, Database Systems
+        </p>
+    </div>
+    <div class="content tighter"><button class="beige"><a target="_blank"href="https://www.linkedin.com/in/annajarebro">read more</a></button>  </div>
+    <div class="credits"><p>&copy; Anna Jarebro 2021 <br> Coded by &#x1F446;</p></div>
    
 </body>
 </html>
