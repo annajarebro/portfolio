@@ -47,14 +47,13 @@ p{  font-family: 'Noto Sans', sans-serif;
 
 .h2-quote{
     color: #A19FC5;
-    text-align: center;
 }
 .h2-italia{
     font-family: 'Italiana', serif;
     font-size: 2em;
 }
 
-.p-center{
+.align-center{
     text-align: center;
 }
 
@@ -73,7 +72,6 @@ h1{
 .big-serif{
     font-size: 14vw;
     font-family: 'Italiana', serif;
-    text-align: center;
     
 
 }
@@ -101,7 +99,6 @@ top: 16px;
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
    
    }
 
@@ -178,16 +175,17 @@ h2.metadata {
   /*-----------INTRO SECTION------------*/
 
 
-  .intro{
-      text-align: center;
+  .b-pad16{
       padding-bottom: 16em;
-       
+  }
+
+  .pad16{
+      padding-top: 16em;
   }
 
 
-  button {
-    background-color: #FFFFFF; 
-    color: #000;
+  .btn1 {
+    background-color: #F9F8F6; 
     border: 1px solid #000;
     padding: 6px 32px;
     text-align: center;
@@ -195,28 +193,67 @@ h2.metadata {
     display: inline-block;
     font-size: 1em;
     margin: 4px 2px;
-    transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 32px;
-  }
-  button a {
-      font-weight: 400;
-      text-decoration: none;
-      font-size: 14px;
+   transition-duration: 0.4s;
 
   }
+  
+  .btn1:hover{
+      background: #1c1c1c;
+      color: #fff;
+  }
+
+
+
+ .btn {
+     margin: 6px;
+ }
+
+ 
+
+
+  
 .beige{
     background-color: #F9F8F6;
 }
 
+ 
+
+  button.btn:hover{
+    background-color: #f0ede7;
+  }
+
+
+
+
+.btn-move{
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+}
+
+.btn-move:hover{
+    transition: -10px;
+}
+
+
+
+.btn-c p {
+    padding-bottom: 4em;
+   
+}
+
+.btn-c.pad {
+    padding: 10em ;
+   
+}
+
+  .btn.active {
+    background-color: #dfd9cd;
+    color: #000;
+  }
   
-  button:hover{
-    background-color: #000;
-    color: white;
-  }
-  button a:hover{
-    color: white;
-  }
 
 .pad4 {
       padding-bottom: 4em;
@@ -231,12 +268,52 @@ h2.metadata {
      
   }
 
+
+  .filterDiv {
+    background-color: #ffffff;
+    padding: 2em;
+    margin-top: 4em;
+    display: none;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .left-align{
+      text-align: right;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .container {
+
+    overflow: hidden;
+  }
+
+  .read-more a{
+    position: relative;
+    padding: 8px 16px;
+    top: 0;
+    transition: top ease 0.2s;
+  }
+
+  .read-more:hover a{
+    top: -10px;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+
+  
+  }
+
+  
+  
+  
+
  /*--------------------PROJECTS--------------------*/
 
-  .pr-h1 {
-      text-align: center;
-   
-  }
+  
 
 .phone-lable{
     display: none;
@@ -283,14 +360,7 @@ h2.metadata {
     opacity: 0;
     transition: opacity 0.25s;
   }
-/* PROB NOT NEED THIS ONE
-.proj-img:hover{
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0, 0.9));
-    background-size: cover;
-    cursor: pointer;
-  
-}
-*/
+
 .proj-img-overlay > * {
     transform: translateY(20px);
     transition: transform 0.25s;
@@ -312,7 +382,15 @@ h2.metadata {
     
 }
 
+/*--------------------GROWTH LOG--------------------*/
 
+#myBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
 
 
  /*--------------------ABOUT NEW --------------------*/
@@ -352,17 +430,15 @@ h2.metadata {
 .credits{
     padding-top: 30em;
     padding-bottom: 1em;
-    text-align: center;
     
 }
 
 .credits p{
-    font-weight: 300;
+    font-size: 0.8rem;
 }
 
 .back-to-top{
     padding-top: 30em;
-    text-align: center;
     padding-bottom: 5em;
 }
 .back-to-top a {
@@ -375,7 +451,6 @@ h2.metadata {
 }
 
 .back-to-top#backhome a{
-    font-weight: 700;
     color: #DADADA;
 }
 .back-to-top#backhome a:hover{
@@ -383,24 +458,12 @@ h2.metadata {
     color: #111111;
 }
 
-.btn{
-    padding-top: 4em;
-    text-align: center;
-}
 
-.btn p {
-    padding-bottom: 4em;
-}
 
-.btn.pad {
-    padding: 10em ;
-   
-}
  /*---------------------------------------------------------------------------------
  ---------------------------------Initiatives-----------------------------------------
  -------------------------------------------------------------------------------*/
 .img-header{
-
 padding-top: 4em;
 }
 
@@ -669,6 +732,10 @@ padding: 1em 0;
 
    
  @media (max-width: 900px) { 
+    
+    
+
+    
     
     .start{
         

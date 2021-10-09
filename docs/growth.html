@@ -1,0 +1,111 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Sans:wght@400;700&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" href="/Index_img/myicone-08.png">
+
+    <title>Anna Jarebro</title>
+</head>
+<body class="beige">
+    <div id="centeredmenu">
+        <ul>
+           
+            <li><a href="/about.html">About</a>
+            </li>
+           <li><a class="active" href="#land">Design</a>
+        
+           </li>
+           <li><a href="/initiatives.html">Initiatives</a>
+        
+           </li>
+        </ul>
+    </div>
+       
+    <div class="content tighter pad10 pad6-bottom">
+        <p class="p-center"> 
+            roject to learn Framer and AE to create smoother prototype animations). As a design and (soon to be) engineer, I enjoy the challenge of solving complex problems and collaborate in diverse teams. 
+        </p>
+    </div>
+
+     <!-- Control buttons -->
+
+    <div id="myBtnContainer">
+
+        <button class="btn active" onclick="filterSelection('all')"> show all</button>
+        <button class="btn" onclick="filterSelection('case')"> mini-case</button>
+        <button class="btn" onclick="filterSelection('madeby')"> if x was made by y</button>
+        <button class="btn" onclick="filterSelection('article')">articles</button>
+    
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
+  <!-- FILTERS: all madeby case -->
+  
+  <div class="container content tighter">
+    <div class="filterDiv case"> 
+        <div class="left-align"><h2 class="metadata">01 mars 2020</h2></div>
+        <h2>Headline</h2> <p>I’m almost only using apple tech-products. I’m working on a Mac, scrolling social media on an iphone and counting my steps on an Apple Watch. As a student, I can most of the time chose weather to design apps for Android and iOS. Weeeell guess what, I will almost every time choose to design for ios since I’m used to the design guidelines and interaction pattern </p> 
+        <div class="left-align read-more"><a>read more  &#10230;</a></div>
+    </div>
+    <div class="filterDiv madeby">mabeby</div>
+    <div class="filterDiv article">article</div>
+    <div class="filterDiv case">case</div>
+  </div>
+
+
+    <div class="credits"><p>&copy; Anna Jarebro 2021 <br> Coded by &#x1F446; </p></div>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+       // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[1].classList.remove("active");
+            this.className += " active";
+        });
+        }
+        </script>
+</body>
+</html>
+
