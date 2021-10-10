@@ -195,9 +195,10 @@ h2.metadata {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 32px;
-   transition-duration: 0.4s;
+    transition-duration: 0.4s;
 
   }
+ 
   
   .btn1:hover{
       background: #1c1c1c;
@@ -208,6 +209,17 @@ h2.metadata {
 
  .btn {
      margin: 6px;
+     background-color: #F9F8F6; 
+    border: 1px solid #000;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 32px;
+    transition-duration: 0.4s;
  }
 
  
@@ -227,17 +239,6 @@ h2.metadata {
 
 
 
-.btn-move{
-    position: relative;
-    top: 0;
-    transition: top ease 0.2s;
-}
-
-.btn-move:hover{
-    transition: -10px;
-}
-
-
 
 .btn-c p {
     padding-bottom: 4em;
@@ -250,7 +251,7 @@ h2.metadata {
 }
 
   .btn.active {
-    background-color: #dfd9cd;
+    background-color: #dbd7cf;
     color: #000;
   }
   
@@ -287,7 +288,6 @@ h2.metadata {
   }
   
   .container {
-
     overflow: hidden;
   }
 
@@ -296,6 +296,7 @@ h2.metadata {
     padding: 8px 16px;
     top: 0;
     transition: top ease 0.2s;
+    text-decoration: none;
   }
 
   .read-more:hover a{
@@ -389,6 +390,7 @@ h2.metadata {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 8px;
 
 }
 
