@@ -260,14 +260,22 @@ h2.metadata {
       padding-bottom: 4em;
   }
 
+.pad-vh50{
+    padding-top: 50vh;
+}
+
+.pad-vh40{
+    padding-top: 40vh;
+}
  
 
   #intro-p {
       margin: auto;
       max-width: 45em;
-      padding-top: 50vh;
      
   }
+
+
 
 
   .filterDiv {
