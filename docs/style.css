@@ -428,6 +428,7 @@ h2.metadata {
 
  }
 
+
  .grid-item img{
     width: 218px;
     height: 203px;
@@ -806,6 +807,10 @@ padding: 1em 0;
         
    
    
+    }
+
+    .smallscreen-hide {
+        display: none;
     }
 
 
