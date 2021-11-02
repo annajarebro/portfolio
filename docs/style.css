@@ -13,7 +13,10 @@
 
   .index{
       padding: 0;
+    
   }
+
+
 
 /*-----------FONTS-------------*/
 
@@ -192,7 +195,7 @@ h2.metadata {
     display: inline-block;
     font-size: 1em;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor:pointer;
     border-radius: 32px;
     transition-duration: 0.4s;
 
@@ -272,6 +275,7 @@ h2.metadata {
   #intro-p {
       margin: auto;
       max-width: 40em;
+      
      
   }
 
@@ -361,7 +365,7 @@ h2.metadata {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(249, 248, 246, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,6 +373,8 @@ h2.metadata {
     opacity: 0;
     transition: opacity 0.25s;
   }
+
+  
 
 .proj-img-overlay > * {
     transform: translateY(20px);
@@ -696,24 +702,6 @@ padding: 1em 0;
   }
   
   
-  /* Fading animation --- slide show ---
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  */
 
   .cpanalysis p b.skype{
     color: #2067BC;
@@ -774,7 +762,6 @@ padding: 1em 0;
     }
     body{
         padding: 0 0;
-        cursor: col-resize;
        
     }
    
