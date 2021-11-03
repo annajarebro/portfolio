@@ -423,17 +423,61 @@ button.btn:hover {
 
 }
 
+/*--------------------ANIMATIONS --------------------*/
+.animation-pop-up{
+    
+    animation: pop-up 0.6s ease-out;
+
+}
+
+.animation-pop-down{
+    animation: pop-down 0.6s ease-out;
+
+}
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform:translateY(2em)
+    }
+
+    100% {
+        opacity: 1;
+        transform:none
+    }
+    
+}
+
+
+@keyframes pop-down {
+    0% {
+        opacity: 0;
+        transform:translateY(-1.5em)
+    }
+
+    100% {
+        opacity: 1;
+        transform:none
+    }
+}
+
 
 /*--------------------ABOUT NEW --------------------*/
+
+
+
 .hero-bg {
     margin: auto;
+
 }
+
+
 
 .hero-bg img {
 
     width: 100%;
     max-width: 1600px;
     border-radius: 16px;
+    
 }
 
 #about-intro {
