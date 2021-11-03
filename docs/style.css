@@ -1,34 +1,38 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
-      padding: 0 10em;
-  }
+body {
+    padding: 0 10em;
+}
 
 
 
-  .index{
-      padding: 0;
-    
-  }
+.index {
+    padding: 0;
+
+}
 
 
 
 /*-----------FONTS-------------*/
 
 
-h1,h2,h3,a
-{font-family: 'Spartan', sans-serif;
-font-style: normal;
-color: #000;
-font-weight: 400;}
+h1,
+h2,
+h3,
+a {
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    color: #000;
+    font-weight: 400;
+}
 
 
-p{  font-family: 'Noto Sans', sans-serif;
+p {
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     color: #424242;
     font-weight: 400;
@@ -47,62 +51,64 @@ p{  font-family: 'Noto Sans', sans-serif;
     letter-spacing: 0.5pt;
 }
 
-.h2-quote{
+.h2-quote {
     color: #A19FC5;
 }
-.h2-italia{
+
+.h2-italia {
     font-family: 'Italiana', serif;
     font-size: 2em;
 }
 
-.align-center{
+.align-center {
     text-align: center;
 }
 
 
 /*-----------32px, use for intro text on index and project categories-------------*/
-h1{
+h1 {
     font-size: 1.9rem;
     padding-top: 35vh;
     padding-bottom: 3em;
 }
 
-.hi-bold{
+.hi-bold {
     font-weight: 700;
 }
 
-.big-serif{
+.big-serif {
     font-size: 14vw;
     font-family: 'Italiana', serif;
-    
+
 
 }
-.big-header{
-  margin: auto;
- 
+
+.big-header {
+    margin: auto;
+
 }
 
-.start{
-position: absolute;
-left: 16px;
-top: 16px;
-}
-
-.end{
+.start {
     position: absolute;
-   right: 16px;
-   top: 16px;
-   }
+    left: 16px;
+    top: 16px;
+}
 
-.center{
+.end {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.center {
     top: 16px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-   
-   }
+
+}
 
 
 h2.metadata {
@@ -110,7 +116,7 @@ h2.metadata {
     letter-spacing: 7%;
     text-transform: uppercase;
     font-weight: 400;
-    
+
 }
 
 
@@ -120,74 +126,79 @@ h2.metadata {
 
 
 
-#show-ultrawide{
+#show-ultrawide {
     display: none;
 }
 
 /*-----------NAVIGATION-------------*/
 
 
-  /* Main menu settings */
+/* Main menu settings */
 #centeredmenu {
-    clear:both;
-    float:left;
-    margin:0;
-    padding:1.5em 0;
-    width:100%;
-    z-index:1000; /* This makes the dropdown menus appear above the page content below */
-    position:relative;
- }
- 
- /* Top menu items */
- #centeredmenu ul {
-    margin:0;
-    padding:0;
-    list-style:none;
-    float:right;
-    position:relative;
-    right:50%;
- }
- #centeredmenu ul li {
-    margin:0 0 0 1em;
-    padding:0;
-    float:left;
-    position:relative;
-    left:50%;
-    top:1px;
- }
- #centeredmenu ul li a {
-    display:block;
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 1.5em 0;
+    width: 100%;
+    z-index: 1000;
+    /* This makes the dropdown menus appear above the page content below */
+    position: relative;
+}
+
+/* Top menu items */
+#centeredmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    position: relative;
+    right: 50%;
+}
+
+#centeredmenu ul li {
+    margin: 0 0 0 1em;
+    padding: 0;
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 1px;
+}
+
+#centeredmenu ul li a {
+    display: block;
     font-size: 14px;
     color: #C8CCD2;
-    margin:0;
-    padding:.6em 2em .4em;
-    line-height:1em;
-    text-decoration:none;
- }
- #centeredmenu ul li a:hover{
+    margin: 0;
+    padding: .6em 2em .4em;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+#centeredmenu ul li a:hover {
     color: #000;
 }
-#centeredmenu ul li a.active{
+
+#centeredmenu ul li a.active {
     color: #000;
 }
- 
 
 
 
-  /*-----------INTRO SECTION------------*/
+
+/*-----------INTRO SECTION------------*/
 
 
-  .b-pad16{
-      padding-bottom: 16em;
-  }
+.b-pad16 {
+    padding-bottom: 16em;
+}
 
-  .pad16{
-      padding-top: 16em;
-  }
+.pad16 {
+    padding-top: 16em;
+}
 
 
-  .btn1 {
-    background-color: #fff; 
+.btn1 {
+    background-color: #fff;
     border: 1px solid #000;
     padding: 6px 32px;
     text-align: center;
@@ -195,23 +206,23 @@ h2.metadata {
     display: inline-block;
     font-size: 1em;
     margin: 4px 2px;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 32px;
     transition-duration: 0.4s;
 
-  }
- 
-  
-  .btn1:hover{
-      background: #1c1c1c;
-      color: #fff;
-  }
+}
+
+
+.btn1:hover {
+    background: #1c1c1c;
+    color: #fff;
+}
 
 
 
- .btn {
+.btn {
     margin: 6px;
-    background-color: #fff; 
+    background-color: #fff;
     border: none;
     padding: 6px 32px;
     text-align: center;
@@ -222,22 +233,22 @@ h2.metadata {
     cursor: pointer;
     border-radius: 4px;
     transition-duration: 0.4s;
- }
-
- 
+}
 
 
-  
-.beige{
+
+
+
+.beige {
     background-color: #fff;
 }
 
- 
 
-  button.btn:hover{
+
+button.btn:hover {
     background-color: #242424;
     color: #fff;
-  }
+}
 
 
 
@@ -245,121 +256,125 @@ h2.metadata {
 
 .btn-c p {
     padding-bottom: 4em;
-   
+
 }
 
 .btn-c.pad {
-    padding: 10em ;
-   
+    padding: 10em;
+
 }
 
-  .btn.active {
+.btn.active {
     background-color: #1c1c1c;
     color: #fff;
-  }
-  
+}
+
 
 .pad4 {
-      padding-bottom: 4em;
-  }
+    padding-bottom: 4em;
+}
 
-.pad-vh50{
+.pad-vh50 {
     padding-top: 50vh;
 }
 
-.pad-vh40{
+.pad-vh40 {
     padding-top: 40vh;
 }
- 
-
-  #intro-p {
-      margin: auto;
-      max-width: 40em;
-      
-     
-  }
 
 
+#intro-p {
+    margin: auto;
+    max-width: 40em;
 
 
-  .filterDiv {
+}
+
+
+
+
+.filterDiv {
     background-color: #ffffff;
     padding: 2em;
     margin-top: 4em;
     display: none;
     border-style: solid;
     border-width: 1px;
-  }
+}
 
-  .left-align{
-      text-align: right;
-  }
-  
-  .show {
+.left-align {
+    text-align: right;
+}
+
+.show {
     display: block;
-  }
-  
-  .container {
-    overflow: hidden;
-  }
+}
 
-  .read-more a{
+.container {
+    overflow: hidden;
+}
+
+.read-more a {
     position: relative;
     padding: 8px 16px;
     top: 0;
     transition: top ease 0.2s;
     text-decoration: none;
-  }
+}
 
-  .read-more:hover a{
+.read-more:hover a {
     top: -10px;
     border: solid;
     border-width: 1px;
     cursor: pointer;
 
-  
-  }
 
-  
-  
-  
+}
 
- /*--------------------PROJECTS--------------------*/
 
-  
 
-.phone-lable{
+
+
+/*--------------------PROJECTS--------------------*/
+
+
+
+.phone-lable {
     display: none;
 }
- /*----------------------------------------*/
-  .proj{
-    
-      padding-bottom: 2em;
-    
+
+/*----------------------------------------*/
+.proj {
+    margin: auto;
+    padding-bottom: 2em;
+    max-width: 800px;
+
+
 
 }
-  .proj-img{
-      margin: auto;
-      position: relative;
-      height: 28em;
-      width: 44em;
-      
-  }
- 
- .proj-img img {
-      display: block;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-  }
+
+.proj-img {
+    margin: auto;
+    position: relative;
 
 
-.link-proj{
+}
+
+.proj-img img {
+    display: block;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.link-proj {
     display: block;
 }
 
- /*----------HOVER IMG OVERLAY---------*/
- .proj-img-overlay{
+/*----------HOVER IMG OVERLAY---------*/
+.proj-img-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -372,11 +387,11 @@ h2.metadata {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
-  }
+}
 
-  
 
-.proj-img-overlay > * {
+
+.proj-img-overlay>* {
     transform: translateY(20px);
     transition: transform 0.25s;
 }
@@ -385,21 +400,21 @@ h2.metadata {
     opacity: 1;
 }
 
-.proj-img-overlay:hover > * {
+.proj-img-overlay:hover>* {
     transform: translateY(0);
 }
 
-.h2-overlay{
+.h2-overlay {
     color: #000;
     font-family: 'Spartan', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    
+
 }
 
 /*--------------------GROWTH LOG--------------------*/
 
-#myBtnContainer{
+#myBtnContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,9 +424,19 @@ h2.metadata {
 }
 
 
- /*--------------------ABOUT NEW --------------------*/
- 
-#about-intro{
+/*--------------------ABOUT NEW --------------------*/
+.hero-bg {
+    margin: auto;
+}
+
+.hero-bg img {
+
+    width: 100%;
+    max-width: 1600px;
+    border-radius: 16px;
+}
+
+#about-intro {
     padding-top: 20vh;
     padding-bottom: 4em;
     margin: auto;
@@ -419,90 +444,103 @@ h2.metadata {
 
 }
 
+.about-img img {
+    width: 40vw;
+    max-width: 1600px;
+    border-radius: 16px;
+}
+
+.white {
+    color: #fff;
+}
+
 #about-intro p {
     max-width: 40em;
 }
 
- #grid-wrapper{
-     max-width: 932px;
-     margin: auto;
-     justify-content: center;
-     display: grid;
-     grid-template-columns: repeat(3, 218px);
-     gap: 20px;
+#grid-wrapper {
+    max-width: 932px;
+    margin: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 218px);
+    gap: 20px;
 
 
- }
-
-
- .grid-item img{
-    width: 218px;
-    height: 203px;
-    
- }
-
-
-
-
-.credits{
-    padding-top: 30em;
-    padding-bottom: 1em;
-    
 }
 
-.credits p{
+
+.grid-item img {
+    width: 218px;
+    height: 203px;
+
+}
+
+
+
+
+.credits {
+    padding-top: 30em;
+    padding-bottom: 1em;
+
+}
+
+.credits p {
     font-size: 0.8rem;
 }
 
-.back-to-top{
+.back-to-top {
     padding-top: 30em;
     padding-bottom: 5em;
 }
+
 .back-to-top a {
     text-decoration: none;
 }
 
 
-.back-to-top#backhome{
+.back-to-top#backhome {
     padding-top: 4em;
 }
 
-.back-to-top#backhome a{
+.back-to-top#backhome a {
     color: #DADADA;
 }
-.back-to-top#backhome a:hover{
-    
+
+.back-to-top#backhome a:hover {
+
     color: #111111;
 }
 
 
 
- /*---------------------------------------------------------------------------------
+/*---------------------------------------------------------------------------------
  ---------------------------------Initiatives-----------------------------------------
  -------------------------------------------------------------------------------*/
-.img-header{
-padding-top: 4em;
+.img-header {
+    padding-top: 4em;
 }
 
-.img-header img{
+.img-header img {
     display: block;
     width: 12em;
     margin: auto;
 
 }
 
- /*-------------------------------------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  ---------------------------------PROJECT MARGING-----------------------------------------
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
-.project-wrapper{
+.project-wrapper {
     padding: 0 6vw;
     max-width: 1600px;
     margin: auto;
-    
+
 }
- /*-------------------------------------------------------------------------------------------------------------------
+
+/*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  ----------------------------------PROJECTS------------------------------------------
  -----------------------------------------------------------------------------
@@ -512,28 +550,29 @@ padding-top: 4em;
     margin: auto;
 }
 
-.head img{
+.head img {
     display: block;
     margin: auto;
     width: 100%;
     height: auto;
     object-fit: cover;
- 
+
 }
 
 
-.summary{
+.summary {
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
     padding: 6em 0em;
 }
 
-.header-text{
+.header-text {
     padding-bottom: 6em;
 }
-.summary ul li{
-    list-style-type: none; 
+
+.summary ul li {
+    list-style-type: none;
     font-family: 'Spartan', sans-serif;
     text-transform: lowercase;
     font-weight: 400;
@@ -541,20 +580,20 @@ padding-top: 4em;
     font-style: normal;
     line-height: 10px;
     padding-top: 1rem;
-    
-    
+
+
 }
 
 
-.content-li{
+.content-li {
     position: relative;
-    left:30%;
+    left: 30%;
     display: block;
     justify-self: center;
-      
-  } 
 
-.content ul li{
+}
+
+.content ul li {
     list-style-position: inside;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -565,14 +604,14 @@ padding-top: 4em;
 }
 
 
-.content ul{
-   padding: 0 0 4em 0;
-  
+.content ul {
+    padding: 0 0 4em 0;
+
 }
 
 
 
-.learning-li ul li{
+.learning-li ul li {
     font-family: 'Spartan', sans-serif;
     list-style-position: outside;
     text-transform: lowercase;
@@ -585,26 +624,27 @@ padding-top: 4em;
 
 
 
-.h2-proj{
+.h2-proj {
     font-size: 1.4em;
     font-weight: 400;
 }
 
 
-.h2-center{
-text-align: center;
-padding: 1em 0;
+.h2-center {
+    text-align: center;
+    padding: 1em 0;
 }
-.pad10{
+
+.pad10 {
     padding-top: 6em;
 }
 
-.pad6-bottom{
+.pad6-bottom {
     padding-bottom: 6em;
 }
 
 .content img {
-    
+
     display: block;
     margin: auto;
     width: 100%;
@@ -621,7 +661,7 @@ padding: 1em 0;
 
 
 
- /*-------------------------------------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  ------------------------------SLIDE SHOW MOGO----------------------------------------------
  -----------------------------------------------------------------------------
@@ -632,18 +672,20 @@ padding: 1em 0;
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
-  .mySlides.first {
+}
+
+.mySlides.first {
     display: block;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -656,21 +698,22 @@ padding: 1em 0;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
     color: #111111;
     font-family: europa, sans-serif;
     font-size: 15px;
@@ -679,17 +722,18 @@ padding: 1em 0;
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #ffffff;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  /* The dots/bullets/indicators */
+}
+
+/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 8px;
@@ -699,101 +743,103 @@ padding: 1em 0;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  
+}
 
-  .cpanalysis p b.skype{
+
+
+.cpanalysis p b.skype {
     color: #2067BC;
-  }
-  .cpanalysis p b.wechat{
+}
+
+.cpanalysis p b.wechat {
     color: #34A50F;
-  }
-  .cpanalysis p b.messenger{
+}
+
+.cpanalysis p b.messenger {
     color: #7C2AC4;
-  }
-  .cpanalysis p b.miro{
+}
+
+.cpanalysis p b.miro {
     color: #E8CF42;
-  }
- /*-------------------------------------------------------------------------------------------------------------------
+}
+
+/*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
  ------------------------------ 1668 px for portrait ipad pro----------------------------------------------
  -----------------------------------------------------------------------------
  -------------------------------------------------------------------------------*/
- @media (max-width: 1669px) { 
-    .project-wrapper{
+@media (max-width: 1669px) {
+    .project-wrapper {
         padding: 0;
     }
 
- }
+}
 
- 
- /*-----------MOBILE VERISION------------*/
 
-   
- @media (max-width: 900px) { 
-    
-    
+/*-----------MOBILE VERISION------------*/
 
-    
-    
-    .start{
-        
-       top: 64px;
-       }
-       
-       .end{
-          top: 64px;
-          }
-       
-       .center{
-           top: 64px;
-          }
 
-    .side-wrapper{
+@media (max-width: 900px) {
+
+
+
+    .hero-bg img {
+
+        width: 90%;
+
+    }
+
+    .start {
+
+        top: 64px;
+    }
+
+    .end {
+        top: 64px;
+    }
+
+    .center {
+        top: 64px;
+    }
+
+    .side-wrapper {
         display: block;
         padding: 0 0;
 
     }
 
 
-    .phone-lable{
+    .phone-lable {
         display: block;
     }
-    body{
+
+    body {
         padding: 0 0;
-       
+
     }
-   
+
 
     #centeredmenu ul li a {
-        padding:.6em 1em .4em;
-       
+        padding: .6em 1em .4em;
+
     }
 
-    .proj-img{
+    .proj-img {
         height: 28em;
         width: 100vw;
     }
-   
-   .proj-img img {
-       object-fit: cover;
+
+    .proj-img img {
+        object-fit: cover;
         height: 100%;
         width: 100%;
-        
+
     }
 
-    #grid-wrapper{
-    
-        display: flex;
-        max-width: 100%;
-        flex-wrap: wrap;
-        margin: auto;
-        justify-self: center;
-        gap: 16px;
-        
-   
-   
+    #grid-wrapper {
+
+        display: none;
+
     }
 
     .smallscreen-hide {
@@ -802,77 +848,86 @@ padding: 1em 0;
 
 
 
-    #about-intro{
+    #about-intro {
         padding: 6em 1em;
 
     }
 
-    #about-intro h2{
+    #about-intro h2 {
         text-align: center;
     }
-   
-   
+
+
     .learning-li {
         padding-left: 1em;
     }
-    
-    .place-left{
+
+    .place-left {
         justify-self: center;
     }
-    .place-right{
+
+    .place-right {
         justify-self: center;
     }
-     
-#about-intro h2{
-    padding: 1em;
+
+    #about-intro h2 {
+        padding: 1em;
+    }
+
+    .about-img {
+        padding-bottom: 4em;
+    }
+
+    .about-img img {
+        width: 90%;
+    }
+
+    .h1-hello {
+        padding: 1em 0 1em 0;
+
+    }
+
+    .learning-li ul li {
+
+        max-width: 100vw;
+    }
+
+    .content ul {
+        padding: 0 0 0 0;
+
+    }
+
+    .learnings {
+        padding: 0 0;
+    }
+
+    .content-li {
+
+        left: 0%;
+
+    }
+
+    .content.tighter {
+        padding: 1em;
+
+    }
+
+    .content.tighter p {
+        max-width: 100%;
+    }
+
+
+
+
+    /*------------------------------OMNI----------------*/
+    .project-wrapper {
+        padding: 0;
+    }
+
+    .summary {
+        display: none;
+    }
+
+
+
 }
-
-
-.about-img img{
-   display: none;
-}
-
-.h1-hello{
-    padding: 1em 0 1em 0; 
-
-}
-.learning-li ul li{
-   
-  max-width: 100vw;
-}
-.content ul{
-    padding: 0 0 0 0;
-   
- }
- .learnings{
-    padding: 0 0;
-}
-.content-li{
-
-    left:0%;
-       
-  } 
-
-  .content.tighter{
-    padding: 1em;
-    
-}
-
-.content.tighter p {
-    max-width: 100%;
-}
-
-
-
-
-/*------------------------------OMNI----------------*/
-.project-wrapper{
-    padding: 0;
-}
-.summary{
-    display: none;
-}
-
- 
- 
-  }

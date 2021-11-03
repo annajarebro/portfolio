@@ -1,130 +1,156 @@
-
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Sans:wght@400;700&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" type="image/png" href="/Index_img/myicone-08.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Sans:wght@400;700&family=Spartan:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/Index_img/myicone-08.png">
 
-    <title>Anna Jarebro</title>
+  <title>Anna Jarebro</title>
 </head>
+
 <body class="beige">
-    <div id="centeredmenu">
-        <ul>
-           
-            <li><a href="/about.html">About</a>
-            </li>
-           <li><a href="/index.html">Design</a>
-        
-           </li>
-           <li><a class="active" href="/growth.html">Growth log</a>
-        
-           </li>
-        </ul>
-    </div>
-    <div class="big-header smallscreen-hide">
-      <p class="big-serif  align-center p-bold center">growth log</p>
+  <div id="centeredmenu">
+    <ul>
+
+      <li><a href="/about.html">About</a>
+      </li>
+      <li><a href="/index.html">Design</a>
+
+      </li>
+      <li><a class="active" href="/growth.html">Growth log</a>
+
+      </li>
+    </ul>
   </div>
-    <div class="content tighter pad-vh40 pad6-bottom">
-        <p class="p-center"> 
-          Welcome to my growth log. This is where I store small side projects that are not large enough to be stand-alone projects in my portfolio but still make me grow as a designer. In this way, you can get to know me a little bit better, and I can look back at my progress. I've just shipped this page so it's a bit empty. You can expect more things popping up here regularly! 
-        </p>
-    </div>
-
-
-
-
-     <!-- Control buttons -->
-
-    <div id="myBtnContainer">
-
-        <button class="btn active" onclick="filterSelection('all')"> show all</button>
-        <button class="btn" onclick="filterSelection('case')"> mini-cases</button>
-      <!--   <button class="btn" onclick="filterSelection('madeby')"> if x was made by y</button> -->
-       <!--  <button class="btn" onclick="filterSelection('article')">articles</button> -->
-        <button class="btn" onclick="filterSelection('initiative')">initiatives</button>
-    
+  <div class="hero-bg align-center">
+    <img src="/Index_img/hero-2.jpg">
   </div>
-  
+  <div class="big-header smallscreen-hide">
+    <p class="big-serif  align-center p-bold center white">growth log</p>
+  </div>
+  <div class="content tighter pad10 pad6-bottom">
+    <p class="p-center">
+      Welcome to my growth log. This is where I store small side projects that are not large enough to be stand-alone
+      projects in my portfolio but still make me grow as a designer. In this way, you can get to know me a little bit
+      better, and I can look back at my progress. I've just shipped this page so it's a bit empty. You can expect more
+      things popping up here regularly!
+    </p>
+  </div>
+
+
+
+
+  <!-- Control buttons -->
+
+  <div id="myBtnContainer">
+
+    <button class="btn active" onclick="filterSelection('all')"> show all</button>
+    <button class="btn" onclick="filterSelection('case')"> mini-cases</button>
+    <!--   <button class="btn" onclick="filterSelection('madeby')"> if x was made by y</button> -->
+    <!--  <button class="btn" onclick="filterSelection('article')">articles</button> -->
+    <button class="btn" onclick="filterSelection('initiative')">initiatives</button>
+
+  </div>
+
   <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 
   <!-- FILTERS: all madeby case -->
-  
+
   <div class="container content tighter">
 
-    <div class="filterDiv case"> 
-      <div class="left-align"><h2 class="metadata">10 October 2021</h2></div>
-      <h2>SOS: I'm only designing for iOS</h2> <p>
-        As a profound apple user, I tend to design for iOS when I choose freely (i.e. quite often since I'm still a student mostly doing fictive cases). Recently this realization has been bothering me. So this is where it changes!  I decided to deep dive into material design guidelines to learn more.      </p> 
-      <div class="left-align read-more"><a href="/material.html">read more  &#10230;</a></div>
-  </div>
-
-    <div class="filterDiv initiative"> 
-        <div class="left-align"><h2 class="metadata">25 August 2021</h2></div>
-        <h2>Design Methodology Workshop</h2> <p>Initiated, created, and conducted a workshop in Design Thinking Methodology for team members and managers at the BMLT division at Volvo GTT. </p> 
-        <div class="left-align read-more"><a href="/workshop.html">read more  &#10230;</a></div>
+    <div class="filterDiv case">
+      <div class="left-align">
+        <h2 class="metadata">10 October 2021</h2>
+      </div>
+      <h2>SOS: I'm only designing for iOS</h2>
+      <p>
+        As a profound apple user, I tend to design for iOS when I choose freely (i.e. quite often since I'm still a
+        student mostly doing fictive cases). Recently this realization has been bothering me. So this is where it
+        changes! I decided to deep dive into material design guidelines to learn more. </p>
+      <div class="left-align read-more"><a href="/material.html">read more &#10230;</a></div>
     </div>
 
-    <div class="filterDiv"> 
-      <div class="left-align"><h2 class="metadata">06 August 2020</h2></div>
+    <div class="filterDiv initiative">
+      <div class="left-align">
+        <h2 class="metadata">25 August 2021</h2>
+      </div>
+      <h2>Design Methodology Workshop</h2>
+      <p>Initiated, created, and conducted a workshop in Design Thinking Methodology for team members and managers at
+        the BMLT division at Volvo GTT. </p>
+      <div class="left-align read-more"><a href="/workshop.html">read more &#10230;</a></div>
+    </div>
+
+    <div class="filterDiv">
+      <div class="left-align">
+        <h2 class="metadata">06 August 2020</h2>
+      </div>
       <h2>Interaction Design Foundation Course </h2>
-      <p> My university courses wrapped up earlier than usual this spring, giving me some extra spare time. But after 4 years in university, my brain naturally responded with: <b class="p-bold">"Sparetime is fun, but where can I learn more?"</b>. This is how I found IDF and finished their course Web Design for Usability. </p> 
-      <div class="left-align read-more"><a href="/idf.html">read more  &#10230;</a></div>
-  </div>
+      <p> My university courses wrapped up earlier than usual this spring, giving me some extra spare time. But after 4
+        years in university, my brain naturally responded with: <b class="p-bold">"Sparetime is fun, but where can I
+          learn more?"</b>. This is how I found IDF and finished their course Web Design for Usability. </p>
+      <div class="left-align read-more"><a href="/idf.html">read more &#10230;</a></div>
+    </div>
 
   </div>
 
 
-    <div class="credits align-center"><p>&copy; Anna Jarebro 2021 <br> Coded by &#x1F446; </p></div>
-    <script>
-        filterSelection("all")
-        function filterSelection(c) {
-          var x, i;
-          x = document.getElementsByClassName("filterDiv");
-          if (c == "all") c = "";
-          for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-          }
+  <div class="credits align-center">
+    <p>&copy; Anna Jarebro 2021 <br> Coded by &#x1F446; </p>
+  </div>
+  <script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
         }
-        
-        function w3AddClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-          }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
         }
-        
-        function w3RemoveClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);     
-            }
-          }
-          element.className = arr1.join(" ");
-        }
-        
-       // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[1].classList.remove("active");
-            this.className += " active";
-        });
-        }
-        </script>
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[1].classList.remove("active");
+        this.className += " active";
+      });
+    }
+  </script>
 </body>
-</html>
 
+</html>
