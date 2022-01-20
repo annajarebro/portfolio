@@ -15,6 +15,8 @@ body {
 
 }
 
+/*-----------icons-------------*/
+
 
 
 /*-----------FONTS-------------*/
@@ -64,6 +66,17 @@ p {
     text-align: center;
 }
 
+.purple {
+    color: #7834C8;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.drop-shadow {
+    filter: drop-shadow(0px 2px 34px rgba(151, 151, 151, 0.25));
+}
+
+
 
 /*-----------32px, use for intro text on index and project categories-------------*/
 h1 {
@@ -77,8 +90,9 @@ h1 {
 }
 
 .big-serif {
-    font-size: 14vw;
-    font-family: 'Italiana', serif;
+    font-size: 10vw;
+    font-family: 'spartan', sans-serif;
+    font-weight: 700;
 
 
 }
@@ -132,6 +146,32 @@ h2.metadata {
 
 /*-----------NAVIGATION-------------*/
 
+.nav-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.nav-top {
+    position: absolute;
+    left: 50%;
+    top: 2.4em;
+    transform: translate(-50%);
+
+}
+
+.nav a {
+    font-size: 14px;
+    color: #C8CCD2;
+    text-decoration: none;
+    padding: 0 2em;
+}
+
+.nav a:hover {
+    color: #000;
+}
+
 
 /* Main menu settings */
 #centeredmenu {
@@ -145,42 +185,6 @@ h2.metadata {
     position: relative;
 }
 
-/* Top menu items */
-#centeredmenu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    float: right;
-    position: relative;
-    right: 50%;
-}
-
-#centeredmenu ul li {
-    margin: 0 0 0 1em;
-    padding: 0;
-    float: left;
-    position: relative;
-    left: 50%;
-    top: 1px;
-}
-
-#centeredmenu ul li a {
-    display: block;
-    font-size: 14px;
-    color: #C8CCD2;
-    margin: 0;
-    padding: .6em 2em .4em;
-    line-height: 1em;
-    text-decoration: none;
-}
-
-#centeredmenu ul li a:hover {
-    color: #000;
-}
-
-#centeredmenu ul li a.active {
-    color: #000;
-}
 
 
 
@@ -292,7 +296,6 @@ button.btn:hover {
 
 
 
-
 .filterDiv {
     background-color: #ffffff;
     padding: 2em;
@@ -332,10 +335,23 @@ button.btn:hover {
 }
 
 
-
+.radius-8 {
+    border-radius: 8px;
+}
 
 
 /*--------------------PROJECTS--------------------*/
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    max-width: 1000px;
+    margin: auto;
+
+
+}
+
 
 
 
@@ -380,13 +396,15 @@ button.btn:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(17, 17, 17, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
+    border-radius: 8px;
+
 }
 
 
@@ -404,11 +422,9 @@ button.btn:hover {
     transform: translateY(0);
 }
 
-.h2-overlay {
-    color: #000;
-    font-family: 'Spartan', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
+.white {
+    color: #fff;
+    padding-left: 1em;
 
 }
 
@@ -423,32 +439,6 @@ button.btn:hover {
 
 }
 
-/*--------------------ANIMATIONS --------------------*/
-.animation-pop-up {
-
-    animation: pop-up 0.6s ease-out;
-
-   
-
-
-}
-
-.animation-delay {
-    animation-delay: 0.2s;
-}
-
-@keyframes pop-up {
-    0% {
-        opacity: 0;
-        transform: translateY(1em)
-    }
-
-    100% {
-        opacity: 1;
-        transform: none
-    }
-
-}
 
 
 
@@ -459,6 +449,7 @@ button.btn:hover {
 
 .hero-bg {
     margin: auto;
+    padding-top: 6em;
 
 }
 
@@ -469,6 +460,9 @@ button.btn:hover {
     width: 100%;
     max-width: 1600px;
     border-radius: 16px;
+    height: 600px;
+    object-fit: cover;
+
 
 }
 
@@ -586,6 +580,7 @@ button.btn:hover {
     margin: auto;
 }
 
+
 .head img {
     display: block;
     margin: auto;
@@ -593,15 +588,28 @@ button.btn:hover {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    margin-top: 100px;
 
 }
+
+.hero-wrapper {
+
+    height: 80vh;
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+
 
 
 .summary {
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
-    padding: 6em 0em;
+    padding: 4em 0em;
 }
 
 .header-text {
@@ -662,10 +670,16 @@ button.btn:hover {
 
 
 .h2-proj {
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 3em;
+    font-weight: 700;
 }
 
+.scale-font {
+    font-size: 2.5vw;
+    font-weight: 700;
+    max-width: 1400px;
+    margin: auto;
+}
 
 .h2-center {
     text-align: center;
@@ -684,8 +698,7 @@ button.btn:hover {
 
     display: block;
     margin: auto;
-    width: 100%;
-    height: 30em;
+    max-width: 800px;
     object-fit: contain;
 }
 
@@ -694,11 +707,39 @@ button.btn:hover {
 }
 
 
-.gif-bg{
+.gif-bg {
     background: #F3F3F4;
 }
 
+.larger-img {
+    max-width: 800px;
+    margin: auto;
+}
 
+.larger-img img {
+
+    width: 100%;
+
+    object-fit: contain;
+}
+
+.project-hero {
+    padding-top: 4em;
+    gap: 2.4em;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.project-hero img:hover{
+    height: 30.5vw;
+   
+}
+
+.project-hero img {
+    height: 30vw;
+    max-height: 600px;
+}
 
 
 /*-------------------------------------------------------------------------------------------------------------------
@@ -812,7 +853,6 @@ button.btn:hover {
     .project-wrapper {
         padding: 0;
     }
-
 }
 
 
@@ -821,7 +861,13 @@ button.btn:hover {
 
 @media (max-width: 900px) {
 
+    .larger-img {
+        padding: 1em;
+    }
 
+    .flex-wrapper {
+        flex-wrap: wrap;
+    }
 
     .hero-bg img {
 
@@ -859,10 +905,6 @@ button.btn:hover {
     }
 
 
-    #centeredmenu ul li a {
-        padding: .6em 1em .4em;
-
-    }
 
     .proj-img {
         height: 28em;
@@ -874,6 +916,14 @@ button.btn:hover {
         height: 100%;
         width: 100%;
 
+    }
+
+    .content img {
+
+        display: block;
+        margin: auto;
+        max-width: 90vw;
+        object-fit: contain;
     }
 
     #grid-wrapper {
@@ -956,8 +1006,19 @@ button.btn:hover {
         max-width: 100%;
     }
 
+    .big-font {
+        font-size: 1.4em;
+        font-weight: 700;
 
+    }
 
+    .h2-proj {
+        font-size: 1.6em;
+    }
+
+    .pad16 {
+        padding-top: 4px;
+    }
 
     /*------------------------------OMNI----------------*/
     .project-wrapper {
@@ -968,6 +1029,27 @@ button.btn:hover {
         display: none;
     }
 
+    .top-nav a {
+        padding: 0 1em;
+    }
 
+
+    .hero-wrapper {
+        background-color: #fff;
+
+    }
+
+    .project-hero {
+        padding-top: 4em;
+        gap: 2.4em;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .project-hero img {
+        height: 80vw;
+
+    }
 
 }

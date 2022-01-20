@@ -16,30 +16,26 @@
 </head>
 
 <body class="beige">
-  <div id="centeredmenu">
-    <ul>
+  <div class="nav nav-top">
+    <a href="/about.html">About</a>
 
-      <li><a href="/about.html">About</a>
-      </li>
-      <li><a href="/index.html">Design</a>
+    <a href="/index.html">Design</a>
 
-      </li>
-      <li><a class="active" href="/growth.html">Growth log</a>
-
-      </li>
-    </ul>
+    <a style="color: #000;" href="/growth.html">Growth log</a>
   </div>
+  <div class="blurred"></div>
   <div class="hero-bg align-center">
     <img src="/Index_img/hero-2.jpg">
   </div>
-  <div class="big-header smallscreen-hide">
-    <p class="big-serif  align-center p-bold center white">growth log</p>
-  </div>
+
   <div class="content tighter pad10 pad6-bottom">
+    <h2 class="h2-proj">This is my playground.</h2>
     <p class="p-center">
       Welcome to my growth log. This is where I store small side projects that are not large enough to be stand-alone
-      projects in my portfolio but still make me grow as a designer. In this way, you can get to know me a little bit
-      better, and I can look back at my progress. I've just shipped this page so it's a bit empty. You can expect more
+      projects in my portfolio, but that still make me grow as a designer. In this way, you can get to know me a little
+      bit
+      better, and I can look back at my progress. I've recently shipped this page so it's a bit empty. You can expect
+      more
       things popping up here regularly!
     </p>
   </div>
@@ -71,97 +67,99 @@
         <h2 class="metadata">29 November 2021</h2>
       </div>
       <h2>Figma: Interactive components & auto layout</h2>
-      <p>Today is about a month since interactive components launched in Figma &#128079; I created an opportunity in my thesis case to become more efficient with interactive components and auto layout. 
-        </p>
+      <p>Today is about a month since interactive components launched in Figma &#128079; I created an opportunity in my
+        thesis case to become more efficient with interactive components and auto layout.
+      </p>
       <div class="left-align read-more"><a href="/figma.html">read more &#10230;</a></div>
     </div>
 
-  <div class="container content tighter">
+    <div class="container content tighter">
 
-    <div class="filterDiv case">
-      <div class="left-align">
-        <h2 class="metadata">10 October 2021</h2>
+      <div class="filterDiv case">
+        <div class="left-align">
+          <h2 class="metadata">10 October 2021</h2>
+        </div>
+        <h2>Material Design Case Study</h2>
+        <p>
+          Sometimes it's good to be reminded of the basics of material design guidelines &#129335;. </p>
+        <div class="left-align read-more"><a href="/material.html">read more &#10230;</a></div>
       </div>
-      <h2>Material Design Case Study</h2>
-      <p>
-        Sometimes it's good to be reminded of the basics of material design guidelines &#129335;. </p>
-      <div class="left-align read-more"><a href="/material.html">read more &#10230;</a></div>
+
+      <div class="filterDiv initiative">
+        <div class="left-align">
+          <h2 class="metadata">25 August 2021</h2>
+        </div>
+        <h2>Design Methodology Workshop</h2>
+        <p>Initiated, created, and conducted a workshop in Design Thinking Methodology for team members and managers at
+          the BMLT division at Volvo GTT &#58415;. </p>
+        <div class="left-align read-more"><a href="/workshop.html">read more &#10230;</a></div>
+      </div>
+
+      <div class="filterDiv">
+        <div class="left-align">
+          <h2 class="metadata">06 August 2020</h2>
+        </div>
+        <h2>Interaction Design Foundation Course </h2>
+        <p> My university courses wrapped up earlier than usual this spring, giving me some extra spare time. But after
+          4
+          years in university, my brain naturally responded with: <b class="p-bold">"Sparetime is fun, but where can I
+            learn more &#128218;?"</b>. This is how I found IDF and finished their course Web Design for Usability. </p>
+        <div class="left-align read-more"><a href="/idf.html">read more &#10230;</a></div>
+      </div>
+
     </div>
 
-    <div class="filterDiv initiative">
-      <div class="left-align">
-        <h2 class="metadata">25 August 2021</h2>
-      </div>
-      <h2>Design Methodology Workshop</h2>
-      <p>Initiated, created, and conducted a workshop in Design Thinking Methodology for team members and managers at
-        the BMLT division at Volvo GTT &#58415;. </p>
-      <div class="left-align read-more"><a href="/workshop.html">read more &#10230;</a></div>
+
+    <div class="credits align-center">
+      <p>&copy; Anna Jarebro 2021 <br> Coded by &#x1F446; </p>
     </div>
+    <script>
+      filterSelection("all")
 
-    <div class="filterDiv">
-      <div class="left-align">
-        <h2 class="metadata">06 August 2020</h2>
-      </div>
-      <h2>Interaction Design Foundation Course </h2>
-      <p> My university courses wrapped up earlier than usual this spring, giving me some extra spare time. But after 4
-        years in university, my brain naturally responded with: <b class="p-bold">"Sparetime is fun, but where can I
-          learn more &#128218;?"</b>. This is how I found IDF and finished their course Web Design for Usability. </p>
-      <div class="left-align read-more"><a href="/idf.html">read more &#10230;</a></div>
-    </div>
-
-  </div>
-
-
-  <div class="credits align-center">
-    <p>&copy; Anna Jarebro 2021 <br> Coded by &#x1F446; </p>
-  </div>
-  <script>
-    filterSelection("all")
-
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
-    }
-
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-          element.className += " " + arr2[i];
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
         }
       }
-    }
 
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
         }
       }
-      element.className = arr1.join(" ");
-    }
 
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[1].classList.remove("active");
-        this.className += " active";
-      });
-    }
-  </script>
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[1].classList.remove("active");
+          this.className += " active";
+        });
+      }
+    </script>
 </body>
 
 </html>
