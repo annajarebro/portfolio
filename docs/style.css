@@ -1022,6 +1022,12 @@ button.btn:hover {
     }
 
   
+  .hero-bg img {
+  
+     height: 500px;
+  
+  
+  }
 
 
     .hero-wrapper {
@@ -1044,21 +1050,22 @@ button.btn:hover {
 
   
     .nav-phone{
+        margin-top: 3em;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
+    
     }
    
     
     .nav a {
         font-size: 16px;
         color: #000;
-        text-decoration: none;
-        padding: 4em 3em 0em 3em;
+   
+       
     }
     
-    .nav a:hover {
-        color: #000;
-    }
+   
 
     .returbo-hero{
         background: #fff;
