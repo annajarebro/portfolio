@@ -363,7 +363,7 @@ button.btn:hover {
 .proj {
     margin: auto;
     padding-bottom: 2em;
-    max-width: 800px;
+    max-width: 1000px;
 
 
 
@@ -396,7 +396,7 @@ button.btn:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(17, 17, 17, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -422,11 +422,7 @@ button.btn:hover {
     transform: translateY(0);
 }
 
-.white {
-    color: #fff;
-    padding-left: 1em;
 
-}
 
 /*--------------------GROWTH LOG--------------------*/
 
