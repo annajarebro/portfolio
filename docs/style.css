@@ -725,6 +725,9 @@ button.btn:hover {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
+  
+
+
 }
 
 .project-hero img:hover{
@@ -737,6 +740,13 @@ button.btn:hover {
     max-height: 600px;
 }
 
+.nav-phone{
+    display: none;
+}
+
+.returbo-hero{
+    background: linear-gradient(180deg, #5F73B1 -26.14%, #242E4E 159.09%);
+}
 
 /*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
@@ -824,21 +834,7 @@ button.btn:hover {
 
 
 
-.cpanalysis p b.skype {
-    color: #2067BC;
-}
 
-.cpanalysis p b.wechat {
-    color: #34A50F;
-}
-
-.cpanalysis p b.messenger {
-    color: #7C2AC4;
-}
-
-.cpanalysis p b.miro {
-    color: #E8CF42;
-}
 
 /*-------------------------------------------------------------------------------------------------------------------
  --------------------------------------------------------------------------------------------------
@@ -1025,9 +1021,7 @@ button.btn:hover {
         display: none;
     }
 
-    .top-nav a {
-        padding: 0 1em;
-    }
+  
 
 
     .hero-wrapper {
@@ -1046,6 +1040,35 @@ button.btn:hover {
     .project-hero img {
         height: 80vw;
 
+    }
+
+  
+    .nav-phone{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    
+    .nav a {
+        font-size: 16px;
+        color: #000;
+        text-decoration: none;
+        padding: 4em 3em 0em 3em;
+    }
+    
+    .nav a:hover {
+        color: #000;
+    }
+
+    .returbo-hero{
+        background: #fff;
+        margin-top: 0;
+    }
+
+    .returbo-hero img {
+    
+        width: 90vw;
+        object-fit: contain;
     }
 
 }
