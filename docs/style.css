@@ -16,8 +16,16 @@ body {
 }
 
 /*-----------icons-------------*/
+.contact{
+font-size: 4vw; 
+line-height: 30vh;
+text-decoration: none;
+font-weight: 700;
+}
 
-
+.contact:hover{
+text-decoration: underline;
+}
 
 /*-----------FONTS-------------*/
 
@@ -302,6 +310,7 @@ button.btn:hover {
     margin-bottom: 4em;
     border-style: solid;
     border-width: 1px;
+
 }
 
 .left-align {
@@ -453,7 +462,7 @@ button.btn:hover {
 .hero-bg img {
 
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     border-radius: 16px;
     height: 600px;
     object-fit: cover;
