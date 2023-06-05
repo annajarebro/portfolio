@@ -1,11 +1,30 @@
 body {
   max-width: 1200px; /* Set your maximum width here */
   margin: 0 auto; /* Center the container horizontally */
-  border: 10px;
 }
 
-.grid-container{
-  margin: 0 2em; /* Center the container horizontally */
+.margins {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.title {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+/*
+ * This works as long as the first line fits on one line
+ * e.g., if you zoom in so that the first line brakes the
+ * the positioning of the rectangles gets messed up...
+*/
+.rectangle {
+  position: relative;
+  width: 4rem;
+  height: 1.25rem;
+  background: #a4f374;
+  border-radius: 1rem;
+  top: 5.3rem;
 }
 
 .grid {
@@ -15,8 +34,7 @@ body {
 }
 
 .grid > div {
-  background: rgba(0,0,0,0.1);
-  padding: 1rem;
+  background: rgba(0, 0, 0, 0.1);
   /*border-radius: 10px; /* Adjust the value to control the roundness of the corners */
   /*overflow: hidden; /* Ensure the image is clipped to the rounded corners */
 }
@@ -45,6 +63,9 @@ body {
 
 /* Media query for small screens */
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
   .grid {
     grid-template-columns: 1fr;
     /* Change to one-column layout */
@@ -58,7 +79,7 @@ body {
   /* Additional styles for text-centered div */
 }
 
-.center-div{
+.center-div {
   display: grid;
   place-items: top;
 }

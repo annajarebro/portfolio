@@ -625,10 +625,6 @@ button.btn:hover {
   max-height: 600px;
 }
 
-.nav-phone {
-  display: none;
-}
-
 .returbo-hero {
   background: linear-gradient(180deg, #5f73b1 -26.14%, #242e4e 159.09%);
 }

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.position-top {
+  position: fixed;
+  top: 2rem;
+}
+
+.navbar {
+  right: 0;
+  width: 100%;
+  /*background-color: #999;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+}
+
+a {
+  /*display: block;*/
+  color: #111;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+a:hover {
+  /* TODO: add hover effect*/
+  color: #555;
+}
+
+p {
+  margin: 0;
+}
