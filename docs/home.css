@@ -1,6 +1,9 @@
 body {
-  max-width: 1200px; /* Set your maximum width here */
-  margin: 0 auto; /* Center the container horizontally */
+}
+
+.grid-container {
+  max-width: 1920px; /* Set your maximum width here */
+  margin: 0 auto 5em 0; /* Center the container horizontally */
 }
 
 .margins {
@@ -9,8 +12,8 @@ body {
 }
 
 .title {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 6em;
+  margin-bottom: 14rem;
 }
 
 /*
@@ -20,11 +23,11 @@ body {
 */
 .rectangle {
   position: relative;
-  width: 4rem;
-  height: 1.25rem;
+  width: 9rem;
+  height: 3rem;
   background: #a4f374;
-  border-radius: 1rem;
-  top: 5.3rem;
+  border-radius: 1.5rem;
+  top: 14rem;
 }
 
 .grid {
@@ -82,4 +85,46 @@ body {
 .center-div {
   display: grid;
   place-items: top;
+}
+
+.limit-width {
+  width: 67%;
+  margin-bottom: 0;
+}
+
+.button-23 {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #222222;
+  border-radius: 1.2rem;
+  color: #222222;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  justify-content: center;
+}
+
+.button-23:hover {
+  text-decoration: none;
+  background-color: #131313;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.5 em;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: ##515151;
 }

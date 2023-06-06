@@ -36,14 +36,40 @@ a {
   /*display: block;*/
   color: #111;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 a:hover {
   /* TODO: add hover effect*/
-  color: #555;
+  /*color: #555;*/
+  text-decoration: underline;
 }
 
 p {
   margin: 0;
+}
+
+.button-23 {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #222222;
+  border-radius: 1.2rem;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+}
+
+.button-23:hover {
+  text-decoration: none;
+  background-color: #131313;
+  color: #ffffff;
+}
+
+p,
+a {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
 }
