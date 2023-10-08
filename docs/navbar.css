@@ -1,75 +1,112 @@
-.container {
-  display: flex;
-  align-items: center;
-}
 
-.position-top {
-  position: fixed;
-  top: 2rem;
-}
-
-.navbar {
-  right: 0;
-  width: 100%;
-  /*background-color: #999;*/
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-ul {
-  list-style-type: none;
+* {
   margin: 0;
-  padding: 0;
-  display: flex;
+}
+.nav-container {
+  
+  align-content: center;
   align-items: center;
-  height: 100%;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60px;
+  justify-content: space-between;
+  max-width: 1440px;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+    
 }
 
-li {
-  flex: 1;
-  text-align: center;
+.button {
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: solid;
+  border-width: 1px;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: background 300ms; /* For Safari */
+  transition: background 300ms; 
+}
+
+.li {
+  
+  
+  border-radius: 8px;
+  padding: 6px;
+  display: flex;
+  justify-items: center;
+}
+
+.ig {
+  
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  justify-items: center;
+
+}
+
+
+.ig:hover {
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
+}
+
+.li:hover{
+ color: #fff;
+ background-color: #5881fa;
 }
 
 a {
-  /*display: block;*/
-  color: #111;
+  color: #131313;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+
+  
 }
 
 a:hover {
-  /* TODO: add hover effect*/
-  /*color: #555;*/
-  text-decoration: underline;
+  cursor: pointer;
 }
+
 
 p {
   margin: 0;
 }
 
-.button-23 {
-  padding: 0.5rem 1rem;
-  background-color: #ffffff;
-  border: 0.1rem solid #222222;
-  border-radius: 1.2rem;
-  box-sizing: border-box;
-  color: #222222;
-  cursor: pointer;
-  margin: 0;
-  outline: none;
-}
-
-.button-23:hover {
-  text-decoration: none;
-  background-color: #131313;
-  color: #ffffff;
+@font-face {
+  font-family: neueMont;
+  src: url(/neuemontrealregular.otf);
 }
 
 p,
 a {
-  font-family: "Clash Display", sans-serif;
-  font-size: 1em;
-  font-weight: 500;
+  font-family: 'neueMont', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 300;
+}
+
+.logo:hover {
+ cursor: pointer;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+
+ .hide-small {
+  display: none;
+ }
+
+
 }
