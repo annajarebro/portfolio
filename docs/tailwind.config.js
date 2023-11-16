@@ -18,6 +18,10 @@ theme: {
   }
 
 },
+
+cursor: {
+  'figma': 'url(/home_img/cur.svg), default',
+}
 },
   plugins: [require("tw-elements/dist/plugin.cjs")],
   darkMode: "class"
