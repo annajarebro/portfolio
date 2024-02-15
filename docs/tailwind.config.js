@@ -23,13 +23,23 @@ theme: {
 colors: {
   'ash': '#3A3A3A',
   'cloud': '#888888',
-  'pale': '#F0F0F0',
+  'pale': '#FEFEFE',
   'white':'#FFFFFF',
-  'dark':'#181818',
   'stravito-tag':'#A04DFF',
   'gradient-left':'#FDC097',
   'gradient-right':'#DCE1EA',
   'returbo':"#3F86FF",
+
+  'dark':'#0E0E0E',
+
+  'background':'#FEFEFE',
+  'menu':'#E9EAEB',
+  'gradient-top':'#F1F3F4',
+  'gradient-bottom':'#E9EAEB',
+  'primary':'#000000',
+  'secondary':'#515151',
+  'tertiary':'#AAAAAA',
+
   
 },
 
