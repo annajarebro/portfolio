@@ -32,13 +32,15 @@ colors: {
 
   'dark':'#0E0E0E',
 
-  'background':'#FEFEFE',
+  'background':'#Fefefe',
   'menu':'#E9EAEB',
   'gradient-top':'#F1F3F4',
   'gradient-bottom':'#E9EAEB',
   'primary':'#000000',
   'secondary':'#515151',
-  'tertiary':'#AAAAAA',
+  'tertiary':'#7A7A7A',
+  'case-study-default':'#F5F5F5',
+  'case-study-hover':'#DFDFDF',
 
   
 },

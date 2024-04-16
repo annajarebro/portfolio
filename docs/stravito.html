@@ -2,323 +2,143 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/fonts/typography.css" rel="stylesheet">
-    <link href="/build.css" rel="stylesheet">
-    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
-    <link rel="icon" type="image/png" href="/home_img/favicon.png" />
-    <title>Anna Jarebro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/build.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <link rel="icon" href="/home_img/favicon.ico" sizes="any">
+  <link rel="icon" href="/home_img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#FEFEFE">
+  <title>Anna Jarebro</title>
 </head>
 
-<body class="max-w-[1350px] m-auto px-2">
 
 
-    <nav class="z-10 px-6  py-4  flex items-center justify-between flex-wrap mx-auto">
-        <div class="flex items-center flex-shrink-0  mr-6">
-            <div class="absolute bg-blue-500 w-2 h-2 rounded-full animate-ping animate-duration-[2000ms] "></div>
-            <div class="relative w-2 h-2 bg-blue-600 rounded-md"></div>
-            <p class="text-sm font-light text-zinc-800 py-1 px-2 ">Currently building SPEC, Scandinavian Photo's Design
-                System</p>
+
+
+
+<body class="mx-8 text-base font-Manrope font-light text-primary">
+
+
+  <nav
+  class="my-8 py-2 flex justify-between text-base items-center sticky z-100 top-0 bg-white backdrop-blur-md bg-opacity-30 max-w-[1540px] px-0 2xl:px-5  mx-auto">
+
+  <a href="/"><img src="/home_img/jarebro.svg"></a>
+
+  <div class="py-3 px-1.5 rounded-full">
+    <a class=" py-2 px-4 rounded-full text-base hover:underline" href="/index.html">Projects</a>
+    <a class="py-2 px-4 rounded-full text-base hover:underline" href="/about.html">About</a>
+
+  </div>
+
+</nav>
+
+  <section class="lg:grid lg:grid-cols-2 gap-x-4  max-w-[1500px] lg:mx-auto mt-80">
+  
+
+    <div class="p-0 lg:py-8 max-w-[600px] mt-8 lg:mt-0 col-span-2">
+
+      <p class="font-medium text-xl">Stravito</p>
+      <p class=" mt-6 text-secondary">Stravito is a knowledge management platform used by market research teams at large enterprises like Burberry, Comcast, and Electrolux. </br></br>
+        During my time at Stravito I worked with the team responsible for experiences regarding search, upload and machine learning. </p>
+      <ul class="text-secondary mt-6">
+        <li>📎 </li>
+        <li class="mt-4">Role: Product Designer</li>
+        <li class="mt-2">Team: 1 Technical PM, 6 Developers + me</li>
+        <li class="mt-2">Team responsibility: Search, upload and machine learning (AI)</li>
+      </ul>
+    </div>
+
+
+
+    <div class="mt-32">
+
+      <div class=" rounded-lg mt-8 lg:mt-0">
+        <img src="/stravito_img/stravito_gradient.webp" class="rounded-lg">
+      </div>
+    </div>
+    <div class="mt-32">
+
+             <div class="relative flex justify-center items-center h-full lg:max-w-[740px] bg-case-study-default rounded-lg ">
+         
+            <video width="80%" height="80%" style="border-radius: 8px; box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);" autoplay muted loop>
+                <source src="/home_img/megaupload.webm" type="video/webm">
+
+            </video>
         </div>
 
+    </div>
 
-        <div
-            class="bg-white p-4 bg-white-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10">
-            <a href="/index.html"
-                class="px-4 py-1 border border-gray-800 rounded-full  mt-4 hidden font-Aeonik lg:inline-block lg:mt-0 text-zinc-800 text-sm mr-2 hover:bg-black hover:text-white">
-                Work
-            </a>
-            <a href="/home_img/cv_anna_jarebro.pdf" target="_blank"
-                class="px-4 py-1 border border-gray-800 rounded-full mt-4 hidden font-Aeonik lg:inline-block lg:mt-0 text-zinc-800 text-sm mr-2 hover:bg-black hover:text-white">
-                Resume
-            </a>
-        </div>
+    <div class="col-span-2 rounded-lg mt-4">
+        <img src="/stravito_img/stravito_process_2x.webp" class="rounded-lg">
+      </div>
+        <div class="p-0 lg:py-12 max-w-[660px] lg:mt-0 col-span-2">
 
-    </nav>
-    <header>
-        <div class="px-6 mt-4 text-xl mx-auto">
+            <p class="font-medium text-xl">New onboarding feature for large file system </p>
+            <p class=" mt-6 text-secondary">Customers onboard anywhere between 500-200k files. To train customer specific ML models we also needed parts of the data to be accurately annotated. Prior this was manual work, creating a limit on how many customers we could onboard per quarter. </br></br>
+                Megaupload is a feature that allows customers to easily transfer large volumes of files in bulk, enabling them to migrate onto the Stravito platform in a smooth and efficient way.  </p>
+               
 
+            <ul class="text-secondary mt-16 px-4 space-y-4 list-disc">
+             
 
-
-            <h1 class="mt-6  text-slate-900 font-Aeonik text-7xl text-zinc-900 mx-auto">
-                Stravito</h1>
-            <h1 class="mt-4 block  text-slate-900 font-Aeonik text-7xl text-zinc-900 mx-auto">
-                — Onboarding large file systems</h1>
-
-        </div>
-
-        <div class="mt-12"><img class="rounded-2xl " src="/stravito_img/stravito_base.webp">
-
-        </div>
-
-
-
-
-
-
-
-
-        <!------------HERO--------->
-
-
-
-
-    </header>
-
-
-    <!------------CONTEXT --------->
-
-
-    <div class="p-4 md:p-0 mt-12 max-w-3xl text-xl mx-auto">
-
-        <h2 class="mt-6 text-5xl font-Aeonik">Can we achieve self-service onboarding?</h2>
-        <p class="mt-6 text-lg text-zinc-700 ">
-            As a small startup, you do anything to serve your customers. Hand over your mess, and we'll take care of it.
-            However, we can't manually handle all onboarding processes if our goal is to onboard customers at scale.
-
-        </p>
-        <p class="mt-20 text-2xl font-Aeonik">Stravito - summary</p>
-        <p class="mt-6 text-lg text-zinc-700 ">
-
-            Stravito is an knowledge management platform
-            used by market research teams at large enterprises like Burberry, Comcast, and Electrolux.
-            During my time at
-            Stravito I worked with the team responsible for experiences regarding search, upload and machine learning.
-        </p>
-
-        <video autoplay muted antialias loop class=" mt-20 object-cover w-full rounded-lg " style="height: 500px;">
-            <source src="stravito_img/stravito-promo_resized.mp4">
-        </video>
-
-        <p class="mt-20 text-2xl font-Aeonik">Team</p>
-
-        <div class="grid grid-cols-2 mt-6">
-            <ul class=" text-lg leading-7 text-zinc-700 list-inside">
-                <li class="flex items-center gap-2 mb-1"><iconify-icon icon="iconoir:frame-simple"></iconify-icon> 1
-                    Designer </p>
-                </li>
-                <li class="flex items-center gap-2"><iconify-icon icon="iconoir:trello"></iconify-icon>
-                    1 Product Manager</li>
+              <li>Increased onboarding capacity and internal productivity </li>
+              <li>Reduced tech involvement by 100% </li>
+              <li>Although we did not achieve 100% self-service, the process became notably faster due to improved efficiency for our Operations team</li>
             </ul>
-            <ul class="mt-2 text-lg leading-7 text-zinc-700 list-inside">
-                <li class="flex items-center gap-2 mb-1"><iconify-icon
-                        icon="iconoir:code-brackets-square"></iconify-icon> 6 Developers </p>
-                </li>
-                <li class="flex items-center gap-2"><iconify-icon icon="iconoir:spock-hand-gesture"></iconify-icon> 3
-                    Stakeholder teams</li>
-            </ul>
-        </div>
-        <p class="mt-20 text-2xl font-Aeonik">Tl;dr</p>
-        <ul class="mt-6 text-lg leading-7 text-zinc-700 list-disc list-inside space-y-1.5">
-            <li>Designed a new feature for uploading and annotating large file systems </li>
-            <li>Increased onboarding capacity and internal productivity </li>
-            <li>Reduced tech involvement by 100% </li>
-            <li>Although we did not achieve 100% self-service, the process became notably faster due to improved efficiency for our Operations team</li>
-           
-        </ul>
 
-
-
-    </div>
-
-
-
-    <div class="mt-12 -my-px mx-auto">
-        <img class="mt-24 rounded-2xl h-96 mx-auto" src="/stravito_img/stravito_process_2x.webp">
-    </div>
-
-    <!------------PROBLEM --------->
-
-    <div class="p-4 md:p-0 mt-32 max-w-3xl text-xl mx-auto">
-
-        <p class="text-base font-Aeonik">The problem</p>
-        <h2 class="mt-4 text-5xl font-Aeonik">Too much tech involvement and inefficient annotation workflow</h2>
-        <p class="mt-6 text-lg text-zinc-700">Each onboarding involved way too many calls with IT departments and
-            fetching data from odd corners of the customer's existing file system. Our operations team then manually
-            annotated their files using old (rather scrappy) internal tools. Scalable? Nah.
-
-        </p>
-
-
-
-        <!------------ USERS--------->
-        <p class="mt-56 text-base font-Aeonik">Challenge</p>
-        <h2 class="mt-2 text-5xl font-base leading-snug leading-7">Designing for efficiency while maintaining high accuracy 
-        </h2>
-        <p class="mt-6 text-lg text-zinc-700">Two types of users with conclicting goals. The feature will be used by both operations teams (internal
-            users) and the custumer (external users). Our operations team ensure that the platform was populated with
-            high quality data. They were also responsible for selecting the training data set for our
-            algorithms. The custumer on the other hand wants to get their documents on the platform with
-            as little effort as possible. 
-        </p>
-
-
-     
-
-
-
-    </div>
-
-
-
-
-    </div>
-
-
-    <div class="p-4 md:p-0 mt-32 max-w-3xl text-xl mx-auto">
-
-
-
-
-        <!------------GOALS --------->
-        <p class="mt-56 text-base font-Aeonik">Goals</p>
-        <h2 class="mt-2 text-5xl font-base leading-snug leading-7">What success looks like
-        </h2>
-
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-32 max-w-5xl mx-auto">
-        <div class="flex items-center gap-6 px-6 py-12 border border-gray-200 border-2 rounded-2xl">
-            <iconify-icon icon="iconoir:golf"></iconify-icon>
-            </svg>
-            <p class="text-lg">Be able to onboard more custumers</p>
-        </div>
-        <div class="flex items-center gap-6 px-6 py-12  border border-gray-200 border-2 rounded-2xl">
-            <iconify-icon icon="iconoir:golf"></iconify-icon>
-            <p class="text-lg">Work less on file transfer and more on product development</p>
-        </div>
-        <div class="flex items-center gap-6 px-6 py-12 border border-gray-200 border-2 rounded-2xl">
-            <iconify-icon icon="iconoir:golf"></iconify-icon>
-            <p class="text-lg">Get custumers to launch their platform quickly</p>
-        </div>
-
-    </div>
-
-
-
-
-
-
-    <!------------ PROCESS--------->
-
-
-    <div class="p-4 md:p-0 mt-32 max-w-3xl text-xl mx-auto">
-        <p class="mt-44 text-base font-Aeonik ">Iterations</p>
-        <h2 class="mt-4 text-4xl font-base leading-snug leading-7">From auto to guidance</h2>
-        <p class="mt-6 pl-1 text-lg text-zinc-700"> Auto-tagging had still too much uncertainty to
-            be added by default.
-            Therefore, I exprimented with a more manual auto-fill option and uncertainty indications. However,
-            after collaborating with developers we relieased that tracking
-            auto-tagged fields as users starts to interact with docs wouldn't be feasible at this
-            stage. Therefore, we went with a softer qulity control
-            on prioritized areas.
-        </p>
-
-
-    </div>
-
-
-    <div class="py-8 mt-12 ">
-        <div class="md:container m-auto px-4 pt-4 pb-2 lg:pb-4 text-gray-600 ">
-
-            <div class="grid gap-8 lg:grid-cols-2">
-                <div class=" p-6 rounded-xl text-center sm:p-8  lg:h-auto ">
-
-                    <img src="/stravito_img/auto.jpg" class="rounded-2xl">
-
-                </div>
-                <div class=" p-6 rounded-xl text-center sm:p-8  lg:h-auto ">
-
-                    <img src="/stravito_img/guide.jpg" class="rounded-2xl">
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="p-4 md:p-0 mt-32 max-w-3xl text-xl mx-auto">
-        <p class="mt-44 text-base font-Aeonik ">Iterations</p>
-        <h2 class="mt-4 text-4xl font-base leading-snug leading-7">File path - Most suprising find</h2>
-        <p class="mt-6 pl-1 text-lg text-zinc-700"> Hypothesis: file path is just for serach, no one actually reads
-            them. <br><br> We quilckly realised that we needed to include the file path to make documents more
-            serachable and bulk edit friendly. Initally only showing the last sub-file as we though file paths were
-            mostly used to search, not to read.
-
-            <br><br> However, the person initating buying this platfrom are often <b class="text-gray-900">the librarian
-                of their team</b>, meaning they are one of the few people who actually know most of their file system by
-            heart. When testing we realised that they relied heavily on file path to annotate.
-        </p>
-    </div>
-
-
-    <div class="py-8 mt-12 ">
-        <div class="md:container m-auto px-4 pt-4 pb-2 lg:pb-4 text-gray-600 ">
-
-            <div class="grid gap-8 lg:grid-cols-2">
-                <div class=" p-6 rounded-xl text-center sm:p-8  lg:h-auto ">
-
-                    <img src="/stravito_img/filepath-1.jpg" class="rounded-2xl">
-
-                </div>
-                <div class=" p-6 rounded-xl text-center sm:p-8  lg:h-auto ">
-
-                    <img src="/stravito_img/filepath-2.jpg" class="rounded-2xl">
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="p-4 md:p-0 mt-32 max-w-3xl text-xl mx-auto">
-        <p class="mt-44 text-base font-Aeonik ">Results</p>
-        <h2 class="mt-4 text-4xl font-base leading-snug leading-7">Increased onboarding capacity and internal
-            productivity</h2>
-        <p class="mt-6 pl-1 text-lg text-zinc-700">While there is still improvements to be made, introducing this
-            featured reduced tech involvement by 100%. With the first itreation, onboarding is still depentent on Ops
-            and not fully self-served. But the process became much faster as the Ops team became more efficient at
-            annotating documents and performing quality control.
-        </p>
-
-        <img src="/stravito_img/stravito_bg2.webp" class="rounded-2xl mt-24">
-    </div>
-
-   
-    </div>
-    <div class="p-4 md:p-0 mt-32 max-w-3xl text-xl mx-auto">
-        <p class="mt-44 text-base font-Aeonik ">Reflection</p>
-        <h2 class="mt-4 text-4xl font-base leading-snug leading-7">Working closely with developers</h2>
-        <p class="mt-8 text-lg leading-7 text-zinc-700">I tried many different approaches on how to get developer
-            feedback thorught the project. From using straw man mocks, to async video Q&A's and co-creation.
-
-            Something I really realised during this project is that <b class="text-gray-900">negotiation is part of the
-                collaboration</b>. <br><br>
-            Two sentences I found extra useful when negotiating with tech: <br><br> <i
-                class="text-violet-700 font-medium">“If we *whatever tech tries to descope*,
-                that will affect the experience by x, y, z” </i> <br><br>
-            Bringing awareness to the consequences so that the team can make informed decisions.
-            <br><br>
-            <i class="text-violet-700 font-medium"> “How much work would it require to allow for x?”</i><br><br>
-            Time is money, and sometimes a minor improvement in the experience is not worth days of development. Also,
-            it’s nice to show that you are mindful of other people’s time.
-            <br><br> Finally, I try really hard to <b class="text-gray-900">don’t dismiss other people’s ideas until
-                I’ve tried them</b>. The designs I’m most proud of so far have often been a mash-up of
-            ideas from the entire product team. Although some ideas might not seem 🚀🌟🎂😻 at first glance, they
-            sometimes turn into the best solutions.
-        </p>
-        <div class="mb-32 mt-16 "><img src="/stravito_img/dev.png" class="rounded-2xl">
-       
+            <a class="flex items-center mt-36 space-x-2" href="mailto:annajarebro@icloud.com"><p class="hover:underline">Full case study available on request </p><iconify-icon icon="iconoir:arrow-right"></iconify-icon></a>
+          </div>
       
-        </div>
+          
+
+
+
+          <div class="mt-64">
+
+            <div class=" rounded-lg mt-8 lg:mt-0">
+              <img src="/stravito_img/stravito_search.webp" class="rounded-lg">
+            </div>
+          </div>
+          <div class="mt-64">
+
+            <div class=" rounded-lg mt-8 lg:mt-0">
+              <img src="/stravito_img/stravito_details.webp" class="rounded-lg">
+            </div>
+          </div>
+          <div class="p-0 lg:py-12 max-w-[660px] lg:mt-0 col-span-2">
+
+            <p class="font-medium text-xl">New search experience – increasing engagement of sub-content</p>
+            <p class=" mt-6 text-secondary">Increasing content consumption 
+            </br>  </br>  
+            The primary content on our platforms are insights reports,  but as Stravito’s customer base grew so did the amount of new content types we supported. Although highly requested, we noticed very low engagement in sub-content. When interviewing customers we discovered that the sub-content was very hard to find due to legacy design.  
+            </p>
+               
+
+            <ul class="text-secondary mt-16 px-4 space-y-4 list-disc">
+                <li>Designed a minimal first solution and a future vision. </li>
+                <li>Worked closely with PM to explore new ways of deriving bit-sized information from the content</li>
+                <li>Increased sub-content engagement by 200%</li>
+            </ul>
+            <a class="flex items-center mt-36 space-x-2" href="mailto:annajarebro@icloud.com"><p class="hover:underline">Full case study available on request </p><iconify-icon icon="iconoir:arrow-right"></iconify-icon></a>
+          
+          </div>
 
 
 
 
+    
+  </section>
+
+
+
+
+
+
+  <a class="flex justify-center items-center mt-80 mb-80 space-x-2" href="/design-system.html"><p class="hover:underline">Next project </p><iconify-icon icon="iconoir:arrow-right"></iconify-icon></a>
 
 
 
