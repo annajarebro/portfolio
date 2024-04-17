@@ -16,6 +16,11 @@ theme: {
   fontFamily: {
     'Aeonik': ['Aeonik', 'sans-serif'],
     'Manrope': ['Manrope'],
+  },
+
+  backgroundImage: {
+    'stravito-bg': "url('/stravito_img/gradient.webp')",
+   
   }
 
 },
@@ -37,7 +42,7 @@ colors: {
   'gradient-top':'#F1F3F4',
   'gradient-bottom':'#E9EAEB',
   'primary':'#000000',
-  'secondary':'#515151',
+  'secondary':'#464646',
   'tertiary':'#7A7A7A',
   'case-study-default':'#F5F5F5',
   'case-study-hover':'#DFDFDF',
@@ -46,12 +51,7 @@ colors: {
 },
 
 },
-  plugins: [require("tw-elements/dist/plugin.cjs")],
-  darkMode: "class",
 
-  plugins: [
-    require('tailwindcss-animated')
-  ],
 
 }
 
