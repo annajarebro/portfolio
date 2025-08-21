@@ -42,7 +42,7 @@ colors: {
   'gradient-top':'#F1F3F4',
   'gradient-bottom':'#E9EAEB',
   'primary':'#000000',
-  'secondary':'#464646',
+  'secondary':'#181818',
   'tertiary':'#7A7A7A',
   'case-study-default':'#F5F5F5',
   'case-study-hover':'#DFDFDF',
